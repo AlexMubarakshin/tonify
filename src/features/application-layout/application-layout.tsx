@@ -1,3 +1,4 @@
+import { getAssetPath } from '@/utils/path';
 import Image from 'next/image';
 
 import { PropsWithChildren } from "react";
@@ -9,7 +10,7 @@ export const ApplicationLayout = ({ children }: PropsWithChildren) => (
 
         <Image
           className='mr-2 w-[48px] h-[48px]'
-          src="/logo.png"
+          src={getAssetPath('/logo.png')}
           width={48}
           height={48}
           alt="TONify's logo"

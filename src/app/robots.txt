@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alexmubarakshin.github.io/tonify/sitemap.xml
