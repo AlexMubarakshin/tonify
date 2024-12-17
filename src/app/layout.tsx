@@ -17,14 +17,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   applicationName: "TONify",
-  title: "TONify: Tools for the TON Blockchain",
+  title: "Address converter | TONify",
   description: "TONify offers a powerful suite of tools designed to simplify and enhance your experience with the TON blockchain.",
   openGraph: {
     type: "website",
     url: "https://tonify.io",
-    title: "TONify: Tools for the TON Blockchain",
+    title: "Address converter | TONify",
     description:
-      "TONify provides easy-to-use, efficient tools for working with TON blockchain addresses and other TON features. Whether you're converting, validating, or managing TON-related data, TONify has you covered.",
+      "TONify provides easy-to-use, efficient tools for working with TON blockchain addresses and other TON features. Whether you're converting, validating, or managing TON-related data.",
   },
   keywords: [
     "TONify",
