@@ -1,0 +1,26 @@
+{
+  "index-page": {
+    "meta": {
+      "title": "地址转换工具 | TONify",
+      "description": "TONify 提供一套强大的工具，旨在简化并提升您在 TON 区块链上的体验。",
+      "keywords": "TONify,TON 区块链,TON 地址转换器,TON 地址验证,区块链工具,TON 区块链工具,地址管理,TON 钱包,TON 区块链浏览器,TON 地址工具,TONify 地址工具,加密货币地址转换器,区块链地址工具,TON 加密工具"
+    },
+    "empty": "没有可显示的地址。请先在下面输入地址。",
+    "invalid": "<highlight>未找到有效地址</highlight>。请提供一个有效的地址。",
+    "bounceableAddress": "地址",
+    "bounceableTooltip": "可退回地址可以接收需要响应的消息，例如交易。<link>更多信息，请访问文档。</link>",
+    "bounceable": "可退回",
+    "nonBounceableAddress": "地址",
+    "nonBounceableTooltip": "不可退回地址无法接收需要响应的消息，例如交易。<link>更多信息，请访问文档。</link>",
+    "nonBounceable": "不可退回",
+    "rawAddressString": "原始地址字符串",
+    "rawAddressTooltip": "原始地址表示 TON 地址的二进制格式。它被编码为 32 字节哈希值与 8 位 workchain 标识符的组合。原始地址不适合用户使用，主要用于程序化或底层实现。<link>更多信息，请访问文档。</link>",
+    "info": "信息",
+    "normalizedAddress": "标准化地址",
+    "conversionResults": "转换结果",
+    "title": "地址转换工具",
+    "description": "快速验证和转换 TON 区块链地址。输入一个或多个地址，以检查其有效性并查看标准化、原始和格式化输出。",
+    "textareaLabel": "TON 地址",
+    "textareaPlaceholder": "在此粘贴 TON 地址（用空格或换行符分隔）。"
+  }
+}

@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
-declare const process: {
-  env: {
-    APP_BASE_PATH: string | undefined;
-  };
-};
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -15,4 +12,4 @@ const nextConfig: NextConfig = {
       : undefined,
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

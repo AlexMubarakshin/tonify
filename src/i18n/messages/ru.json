@@ -1,0 +1,26 @@
+{
+  "index-page": {
+    "meta": {
+      "title": "Конвертор адресов | TONify",
+      "description": "TONify предлагает набор инструментов, разработанных для упрощения и улучшения взаимодействия с блокчейном TON.",
+      "keywords": "TONify,конвертер адресов TON,проверка адресов TON,TON blockchain,TON address converter,TON address validation,blockchain tools,TON blockchain tools,address management,TON wallet,TON blockchain explorer,TON address utilities,TONify address tools,cryptocurrency address converter,blockchain address tool,TON crypto tools"
+    },
+    "empty": "Нет адресов для отображения. Начните с ввода адреса ниже.",
+    "invalid": "<highlight>Вы ввели невалидный адрес</highlight>. Пожалуйста, укажите корректный адрес.",
+    "bounceableAddress": "Отправляемый адрес",
+    "bounceableTooltip": "Отправляемый адрес (Bounceable) — это адрес, который может получать сообщения, требующие ответа, такие как транзакции. <link>Подробнее смотрите в документации</link>.",
+    "bounceable": "(Bounceable)",
+    "nonBounceableAddress": "Неотправляемый адрес",
+    "nonBounceableTooltip": "Неотправляемый адрес (Non-Bounceable) не может получать сообщения, требующие ответа, такие как транзакции. <link>Подробнее смотрите в документации</link>.",
+    "nonBounceable": "(Non-Bounceable)",
+    "rawAddressString": "Raw-адрес",
+    "rawAddressTooltip": "Raw-адрес представляет собой бинарный формат адреса в сети TON. Он состоит из 32-байтового хэша и 8-битного идентификатора workchain. Raw-адреса предназначены для программных и низкоуровневых реализаций и не используются напрямую пользователями. <link>Подробнее смотрите в документации</link>",
+    "info": "Инфо",
+    "normalizedAddress": "Нормализованный адрес",
+    "conversionResults": "Результаты конвертации",
+    "title": "Конвертер TON-адресов",
+    "description": "Быстро проверяйте и конвертируйте адреса блокчейна TON. Введите один или несколько адресов для их конвертации в разные форматы.",
+    "textareaLabel": "Адреса TON",
+    "textareaPlaceholder": "Вставьте адреса TON здесь (разделяйте их пробелами или переносами строк)."
+  }
+}

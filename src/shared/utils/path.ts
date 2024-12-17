@@ -1,9 +1,3 @@
-declare const process: {
-  env: {
-    APP_BASE_PATH: string | undefined;
-  };
-};
-
 export function getAppBasePath() {
   return process.env.APP_BASE_PATH &&
     typeof process.env.APP_BASE_PATH === "string"

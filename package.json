@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "NEXT_TELEMETRY_DISABLED=1 NODE_ENV=production next build",
-    "build:github": "NEXT_TELEMETRY_DISABLED=1 NODE_ENV=production APP_BASE_PATH=/tonify next build",
+    "build:github": "NEXT_TELEMETRY_DISABLED=1 NODE_ENV=production APP_FULL_PATH=https://alexmubarakshin.github.io/tonify/ APP_BASE_PATH=/tonify next build",
     "start": "NEXT_TELEMETRY_DISABLED=1 next start",
     "lint": "NEXT_TELEMETRY_DISABLED=1 next lint",
     "lint:lint": "NEXT_TELEMETRY_DISABLED=1 next lint",
@@ -27,6 +27,7 @@
     "@nextui-org/tooltip": "2.2.5",
     "framer-motion": "11.14.4",
     "next": "15.1.0",
+    "next-intl": "3.26.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "ton-core": "0.53.0"
