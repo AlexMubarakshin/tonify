@@ -22,5 +22,11 @@
     "description": "快速验证和转换 TON 区块链地址。输入一个或多个地址，以检查其有效性并查看标准化、原始和格式化输出。",
     "textareaLabel": "TON 地址",
     "textareaPlaceholder": "在此粘贴 TON 地址（用空格或换行符分隔）。"
+  },
+  "header": {
+    "gh": {
+      "buttonText": "在 GitHub 上标星",
+      "ariaLabel": "在 GitHub 上标记 TONify 仓库为星标，以支持这个专为 TON 区块链设计的工具。"
+    }
   }
 }

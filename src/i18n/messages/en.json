@@ -22,5 +22,11 @@
     "description": "Quickly validate and convert TON blockchain addresses. Enter one or more addresses to check their validity and view normalized, raw, and formatted outputs.",
     "textareaLabel": "TON Addresses",
     "textareaPlaceholder": "Paste TON addresses here (separated by spaces or new lines)."
+  },
+  "header": {
+    "gh": {
+      "buttonText": "Star on GitHub",
+      "ariaLabel": "Star the TONify repository on GitHub to show your support for this TON blockchain tool."
+    }
   }
 }

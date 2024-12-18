@@ -30,6 +30,7 @@
     "next-intl": "3.26.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "react-github-btn": "1.4.0",
     "ton-core": "0.53.0"
   },
   "devDependencies": {

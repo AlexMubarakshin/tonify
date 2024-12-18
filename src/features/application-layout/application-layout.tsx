@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { PropsWithChildren } from "react";
 import { ApplicationLayoutLangSelector } from './application-layout-lang-selector';
+import { ApplicationLayoutGhWidgets } from './application-layout-gh-widgets';
 
 export const ApplicationLayout = ({ children }: PropsWithChildren) => (
   <div className="min-h-screen flex flex-col">
@@ -20,7 +21,8 @@ export const ApplicationLayout = ({ children }: PropsWithChildren) => (
           <h3 className="text-2xl font-bold">TONify</h3>
         </div>
 
-        <div>
+        <div className="flex flex-row items-center">
+          <ApplicationLayoutGhWidgets className="flex flex-row items-center mr-1 pt-1" />
           <ApplicationLayoutLangSelector />
         </div>
       </div>
