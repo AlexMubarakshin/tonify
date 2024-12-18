@@ -10,6 +10,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { Providers } from "../providers";
 import { redirect } from "next/navigation";
 import { getMessages } from "@/i18n/getMessages";
+import { getManifestUrl } from "@/shared/utils/metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,6 +51,9 @@ export default async function RootLayout({
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
       <html lang={locale}>
+        <head>
+          <link rel="manifest" href={getManifestUrl()} />
+        </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >

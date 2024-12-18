@@ -1,6 +1,7 @@
 import { DEFAULT_LOCALE, LocaleKey, LOCALES } from "@/i18n/constants";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { getAppBasePath } from "./path";
 
 function normilizeURL(url: string) {
   return url.endsWith("/") ? url.slice(0, -1) : url;
@@ -10,12 +11,28 @@ function joinURL(...parts: string[]) {
   return normilizeURL(parts.map(normilizeURL).join("/"));
 }
 
+export function getManifestUrl() {
+  const basePath = getAppBasePath();
+  if (!basePath) {
+    return "/manifest.json";
+  }
+
+  return joinURL(basePath, "manifest.json");
+}
+
 export async function createMetaData(
   translationNamespace: string,
   locale: LocaleKey,
   path: string
 ): Promise<Metadata> {
-  const FAV_ICONS = ["16x16", "32x32", "96x96", "128x128", "196x196", "512x512"];
+  const FAV_ICONS = [
+    "16x16",
+    "32x32",
+    "96x96",
+    "128x128",
+    "196x196",
+    "512x512",
+  ];
   const APPLE_ICONS = [
     "57x57",
     "60x60",
