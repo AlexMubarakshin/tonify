@@ -1,15 +1,7 @@
-import { DEFAULT_LOCALE, LocaleKey, LOCALES } from "@/i18n/constants";
+import { LocaleKey, LOCALES } from "@/i18n/constants";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { getAppBasePath } from "./path";
-
-function normilizeURL(url: string) {
-  return url.endsWith("/") ? url.slice(0, -1) : url;
-}
-
-function joinURL(...parts: string[]) {
-  return normilizeURL(parts.map(normilizeURL).join("/"));
-}
+import { getAppBasePath, joinURL, normilizeURL } from "./path";
 
 export function getManifestUrl() {
   const basePath = getAppBasePath();
@@ -48,8 +40,8 @@ export async function createMetaData(
   ];
 
   const t = await getTranslations({ locale, namespace: translationNamespace });
-  const url = normilizeURL(path);
-
+  const url = joinURL(normilizeURL(process.env.APP_FULL_PATH || ''), normilizeURL(path));
+  console.log({ url });
   return {
     title: t("meta.title"),
     description: t("meta.description"),
@@ -62,11 +54,7 @@ export async function createMetaData(
     alternates: {
       canonical: url,
       languages: {
-        "x-default": joinURL(
-          process.env.APP_FULL_PATH || "",
-          DEFAULT_LOCALE,
-          path
-        ),
+        "x-default": joinURL(process.env.APP_FULL_PATH || ""),
         ...Object.fromEntries(
           LOCALES.map((locale) => [
             locale,

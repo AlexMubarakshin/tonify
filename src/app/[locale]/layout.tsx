@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { ApplicationLayout } from "@/features/application-layout/application-layout";
 import { routing } from "@/i18n/routing";
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import { setRequestLocale } from "next-intl/server";
 import type { LocaleKey } from "@/i18n/constants";
-import { NextIntlClientProvider } from "next-intl";
-import { Providers } from "../providers";
 import { redirect } from "next/navigation";
 import { getMessages } from "@/i18n/getMessages";
-import { getManifestUrl } from "@/shared/utils/metadata";
+import { Application } from "@/features/application/aplication";
 
 export const metadata: Metadata = {
   applicationName: "TONify",
@@ -21,8 +18,7 @@ export function generateStaticParams() {
 export default async function RootLayout({
   children,
   params
-}: Readonly<{
-  children: ReactNode;
+}: PropsWithChildren<{
   params: Promise<{ locale: LocaleKey }>;
 }>) {
   const { locale } = await params;
@@ -37,19 +33,8 @@ export default async function RootLayout({
   const messages = await getMessages(locale);
 
   return (
-    <NextIntlClientProvider messages={messages} locale={locale}>
-      <html lang={locale}>
-        <head>
-          <link rel="manifest" href={getManifestUrl()} />
-        </head>
-        <body className="antialiased">
-          <Providers>
-            <ApplicationLayout>
-              {children}
-            </ApplicationLayout>
-          </Providers>
-        </body>
-      </html>
-    </NextIntlClientProvider>
+    <Application messages={messages} locale={locale}>
+      {children}
+    </Application>
   );
 }

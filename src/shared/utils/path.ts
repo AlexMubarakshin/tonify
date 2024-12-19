@@ -11,3 +11,11 @@ export function getAssetPath(src: string) {
 
   return basePath ? `${basePath}/${normalizedSrc}` : src;
 }
+
+export function normilizeURL(url: string) {
+  return url.endsWith("/") ? url.slice(0, -1) : url;
+}
+
+export function joinURL(...parts: string[]) {
+  return normilizeURL(parts.map(normilizeURL).join("/"));
+}
