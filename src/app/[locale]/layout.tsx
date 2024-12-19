@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-
 import { ApplicationLayout } from "@/features/application-layout/application-layout";
 import { routing } from "@/i18n/routing";
 import { ReactNode } from "react";
@@ -11,16 +9,6 @@ import { Providers } from "../providers";
 import { redirect } from "next/navigation";
 import { getMessages } from "@/i18n/getMessages";
 import { getManifestUrl } from "@/shared/utils/metadata";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   applicationName: "TONify",
@@ -54,9 +42,7 @@ export default async function RootLayout({
         <head>
           <link rel="manifest" href={getManifestUrl()} />
         </head>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+        <body className="antialiased">
           <Providers>
             <ApplicationLayout>
               {children}
