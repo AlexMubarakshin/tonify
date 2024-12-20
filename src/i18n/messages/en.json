@@ -1,9 +1,9 @@
 {
   "index-page": {
     "meta": {
-      "title": "Address converter | TONify",
+      "title": "TON Address converter | TONify",
       "description": "TONify offers a powerful suite of tools designed to simplify and enhance your experience with the TON blockchain.",
-      "keywords": "TONify,TON blockchain,TON address convert,TON address converter,TON address validation,blockchain tools,TON blockchain tools,address management,TON wallet,TON blockchain explorer,TON address utilities,TONify address tools,cryptocurrency address converter,blockchain address tool,TON crypto tools"
+      "keywords": "convert ton address,TON address convert,TON address converter,ton convert address,TON address validation,TONify,TON blockchain,blockchain tools,TON blockchain tools,address management,TON wallet,TON blockchain explorer,TON address utilities,TONify address tools,cryptocurrency address converter,blockchain address tool,TON crypto tools"
     },
     "empty": "No addresses to display. Start by entering an address below.",
     "invalid": "<highlight>No valid addresses found</highlight>. Please provide a valid address.",
@@ -17,9 +17,9 @@
     "rawAddressTooltip": "The raw address represents the binary format of a TON address. It is encoded as a 32-byte hash combined with an 8-bit workchain identifier. Raw addresses are not user-friendly and are primarily used programmatically or in low-level implementations. <link>For more info, visit the documentation.</link>",
     "info": "info",
     "normalizedAddress": "Normalized Address",
-    "conversionResults": "Conversion Results",
-    "title": "Address Conversion Tool",
-    "description": "Quickly validate and convert TON blockchain addresses. Enter one or more addresses to check their validity and view normalized, raw, and formatted outputs.",
+    "conversionResults": "Converter Results",
+    "title": "TON Address converter Tool",
+    "description": "Quickly validate and convert TON addresses. Enter one or more addresses to check their validity and view normalized, raw, and formatted outputs.",
     "textareaLabel": "TON Addresses",
     "textareaPlaceholder": "Paste TON addresses here (separated by spaces or new lines)."
   },
