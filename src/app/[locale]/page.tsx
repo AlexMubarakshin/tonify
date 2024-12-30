@@ -13,7 +13,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { locale } = await params;
 
-  return createMetaData('index-page', locale as LocaleKey, locale);
+  return createMetaData('index-page', locale as LocaleKey, '');
 }
 
 export default function Home() {

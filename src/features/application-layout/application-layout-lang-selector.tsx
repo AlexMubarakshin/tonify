@@ -1,11 +1,14 @@
-import { LOCALE_EMOJI, LOCALE_LABELS, LOCALES } from "@/i18n/constants";
+import { LOCALE_EMOJI, LOCALE_LABELS, LocaleKey, LOCALES } from "@/i18n/constants";
 import { ApplicationLayoutLangSelectorDropdown } from "./application-layout-lang-selector-dropdown";
 
-export const ApplicationLayoutLangSelector = () => {
+type Props = {
+  locale: LocaleKey
+}
+
+export const ApplicationLayoutLangSelector = ({locale}: Props) => {
   return (
     <div>
-
-      <ApplicationLayoutLangSelectorDropdown />
+      <ApplicationLayoutLangSelectorDropdown locale={locale} />
 
       <ul className="hidden absolute invisible opacity-0">
         {LOCALES.map((lang) => (

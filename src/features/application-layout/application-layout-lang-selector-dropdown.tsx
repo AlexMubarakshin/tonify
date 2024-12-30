@@ -3,11 +3,12 @@
 import { LOCALE_EMOJI, LOCALE_LABELS, LocaleKey, LOCALES } from "@/i18n/constants";
 import { Link } from "@/i18n/routing";
 import { Dropdown, DropdownTrigger, Button, DropdownMenu, DropdownItem } from "@nextui-org/react";
-import { useLocale } from "next-intl";
 
-export const ApplicationLayoutLangSelectorDropdown = () => {
-  const locale = useLocale() as LocaleKey;
+type Props = {
+  locale: LocaleKey
+}
 
+export const ApplicationLayoutLangSelectorDropdown = ({ locale }: Props) => {
   return (
     <Dropdown>
       <DropdownTrigger>
@@ -27,5 +28,4 @@ export const ApplicationLayoutLangSelectorDropdown = () => {
       </DropdownMenu>
     </Dropdown>
   )
-
 }

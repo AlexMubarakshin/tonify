@@ -41,7 +41,7 @@ export async function createMetaData(
 
   const t = await getTranslations({ locale, namespace: translationNamespace });
   const url = joinURL(normilizeURL(process.env.APP_FULL_PATH || ''), normilizeURL(path));
-  console.log({ url });
+
   return {
     title: t("meta.title"),
     description: t("meta.description"),

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-head-element */
 import { Providers } from "@/app/providers"
-import { DEFAULT_LOCALE } from "@/i18n/constants"
+import { DEFAULT_LOCALE, LocaleKey } from "@/i18n/constants"
 import { getManifestUrl } from "@/shared/utils/metadata"
 import { NextIntlClientProvider } from "next-intl"
 import { ApplicationLayout } from "../application-layout/application-layout"
@@ -8,7 +8,7 @@ import type { ComponentProps, PropsWithChildren } from "react"
 
 type Props = {
   messages: ComponentProps<typeof NextIntlClientProvider>['messages'];
-  locale: string
+  locale: LocaleKey;
 }
 
 export const Application = ({ messages, locale, children }: PropsWithChildren<Props>) => (
@@ -20,7 +20,7 @@ export const Application = ({ messages, locale, children }: PropsWithChildren<Pr
 
       <body className="antialiased">
         <Providers>
-          <ApplicationLayout>
+          <ApplicationLayout locale={locale}>
             {children}
           </ApplicationLayout>
         </Providers>
