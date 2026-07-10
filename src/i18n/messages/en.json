@@ -23,6 +23,17 @@
     "textareaLabel": "TON Addresses",
     "textareaPlaceholder": "Paste TON addresses here (separated by spaces or new lines)."
   },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "What is a TON address?", "a": "A TON address identifies a wallet or smart contract on The Open Network. It combines a workchain ID with a 256-bit account ID and can be shown in several equivalent formats — raw and user-friendly (bounceable or non-bounceable)." },
+      { "q": "What is the difference between bounceable and non-bounceable addresses?", "a": "A bounceable address (prefix EQ) returns the funds if the destination contract cannot process the message, so it is used for smart contracts. A non-bounceable address (prefix UQ) does not return funds and is typically used for wallets and exchange deposits." },
+      { "q": "What is a raw TON address?", "a": "The raw format is the low-level representation written as workchain:hex, for example 0:83dfd552e63729b472fcbcc8c45ebcc6691702558b68ec7527e1ba403a0f31a8. It is a 32-byte hash with an 8-bit workchain ID and is used programmatically rather than shared with users." },
+      { "q": "What is a normalized TON address?", "a": "A normalized address is the canonical user-friendly form (URL-safe base64 with the bounceable flag off). Normalizing lets you reliably compare or deduplicate addresses that point to the same account." },
+      { "q": "What do the EQ and UQ prefixes mean?", "a": "In user-friendly base64 addresses, EQ marks a mainnet bounceable address and UQ marks a mainnet non-bounceable address. Both encode the same account and differ only by the bounceable flag." },
+      { "q": "Is TONify free and safe to use?", "a": "Yes. TONify is a free, open-source tool and all conversion happens locally in your browser — the addresses you paste are never sent to any server." }
+    ]
+  },
   "header": {
     "gh": {
       "buttonText": "Star on GitHub",

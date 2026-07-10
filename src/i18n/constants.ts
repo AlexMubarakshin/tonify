@@ -19,3 +19,17 @@ export const LOCALE_LABELS: Record<LocaleKey, string> = {
   ru: "Русский",
   "zh-cn": "简体中文",
 }
+
+// BCP-47 codes emitted as hreflang values (route path may differ, e.g. /zh-cn -> zh-Hans)
+export const LOCALE_HREFLANG: Record<LocaleKey, string> = {
+  en: "en",
+  ru: "ru",
+  "zh-cn": "zh-Hans",
+};
+
+// og:locale values
+export const LOCALE_OG: Record<LocaleKey, string> = {
+  en: "en_US",
+  ru: "ru_RU",
+  "zh-cn": "zh_CN",
+};
