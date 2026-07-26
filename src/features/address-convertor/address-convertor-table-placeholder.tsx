@@ -13,7 +13,7 @@ export const AddressConvertorTablePlaceholder = ({ nonValid, empty }: Props) => 
     return (
       <span>
         {t.rich('index-page.invalid', {
-          highlight: (children) => <b className="text-red-300">{children}</b>
+          highlight: (children) => <b className="text-danger">{children}</b>
         })}
       </span>
     )

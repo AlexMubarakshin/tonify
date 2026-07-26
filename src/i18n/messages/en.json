@@ -5,7 +5,7 @@
       "description": "TONify offers a powerful suite of tools designed to simplify and enhance your experience with the TON blockchain.",
       "keywords": "convert ton address,TON address convert,TON address converter,ton convert address,TON address validation,TONify,TON blockchain,blockchain tools,TON blockchain tools,address management,TON wallet,TON blockchain explorer,TON address utilities,TONify address tools,cryptocurrency address converter,blockchain address tool,TON crypto tools"
     },
-    "empty": "No addresses to display. Start by entering an address below.",
+    "empty": "No addresses yet. Paste one above to get started.",
     "invalid": "<highlight>No valid addresses found</highlight>. Please provide a valid address.",
     "bounceableAddress": "Address",
     "bounceableTooltip": "A bounceable address is one that can receive messages that require a response, such as transactions. <link>For more info, visit the documentation.</link>",
@@ -21,7 +21,20 @@
     "title": "TON Address converter Tool",
     "description": "Quickly validate and convert TON addresses. Enter one or more addresses to check their validity and view normalized, raw, and formatted outputs.",
     "textareaLabel": "TON Addresses",
-    "textareaPlaceholder": "Paste TON addresses here (separated by spaces or new lines)."
+    "textareaPlaceholder": "Paste TON addresses here (separated by spaces or new lines).",
+    "loadExample": "Load example",
+    "clear": "Clear",
+    "download": "Download",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "showTestnet": "Show testnet",
+    "testnet": "Testnet",
+    "testnetBounceable": "Bounceable",
+    "testnetNonBounceable": "Non-Bounceable",
+    "explorer": "Explorer",
+    "openInExplorer": "Open in explorer",
+    "validCount": "{count} valid",
+    "invalidCount": "{count} invalid"
   },
   "faq": {
     "title": "Frequently asked questions",
@@ -35,6 +48,7 @@
     ]
   },
   "header": {
+    "themeToggle": "Toggle theme",
     "gh": {
       "buttonText": "Star on GitHub",
       "ariaLabel": "Star the TONify repository on GitHub to show your support for this TON blockchain tool."

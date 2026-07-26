@@ -5,7 +5,7 @@
       "description": "TONify 提供一套强大的工具，旨在简化并提升您在 TON 区块链上的体验。",
       "keywords": "TONify,TON 区块链,TON 地址转换器,TON 地址验证,区块链工具,TON 区块链工具,地址管理,TON 钱包,TON 区块链浏览器,TON 地址工具,TONify 地址工具,加密货币地址转换器,区块链地址工具,TON 加密工具"
     },
-    "empty": "没有可显示的地址。请先在下面输入地址。",
+    "empty": "还没有地址。请在上方粘贴地址开始。",
     "invalid": "<highlight>未找到有效地址</highlight>。请提供一个有效的地址。",
     "bounceableAddress": "地址",
     "bounceableTooltip": "可退回地址可以接收需要响应的消息，例如交易。<link>更多信息，请访问文档。</link>",
@@ -21,7 +21,20 @@
     "title": "地址转换工具",
     "description": "快速验证和转换 TON 区块链地址。输入一个或多个地址，以检查其有效性并查看标准化、原始和格式化输出。",
     "textareaLabel": "TON 地址",
-    "textareaPlaceholder": "在此粘贴 TON 地址（用空格或换行符分隔）。"
+    "textareaPlaceholder": "在此粘贴 TON 地址（用空格或换行符分隔）。",
+    "loadExample": "示例",
+    "clear": "清除",
+    "download": "下载",
+    "copy": "复制",
+    "copied": "已复制！",
+    "showTestnet": "显示测试网",
+    "testnet": "测试网",
+    "testnetBounceable": "可退回",
+    "testnetNonBounceable": "不可退回",
+    "explorer": "浏览器",
+    "openInExplorer": "在区块浏览器中打开",
+    "validCount": "有效 {count}",
+    "invalidCount": "无效 {count}"
   },
   "faq": {
     "title": "常见问题",
@@ -35,6 +48,7 @@
     ]
   },
   "header": {
+    "themeToggle": "切换主题",
     "gh": {
       "buttonText": "在 GitHub 上标星",
       "ariaLabel": "在 GitHub 上标记 TONify 仓库为星标，以支持这个专为 TON 区块链设计的工具。"

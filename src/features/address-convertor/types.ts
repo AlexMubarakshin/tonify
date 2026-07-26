@@ -10,6 +10,11 @@ export type AddressResultTableData = {
   toStringNonBounceable: string | undefined;
   toRawString: string | undefined;
   normalized: string | undefined;
+  testnetBounceable: string | undefined;
+  testnetNonBounceable: string | undefined;
 };
 
 export type AddressResultTableDataKey = keyof AddressResultTableData;
+
+// Column keys that hold a copyable address value.
+export type AddressColumnKey = Exclude<AddressResultTableDataKey, "key">;

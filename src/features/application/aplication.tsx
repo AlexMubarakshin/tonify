@@ -19,13 +19,13 @@ export const Application = ({ messages, locale, children }: PropsWithChildren<Pr
 
   return (
   <NextIntlClientProvider messages={messages} locale={DEFAULT_LOCALE}>
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="manifest" href={getManifestUrl()} />
         <StructuredData locale={locale} description={description} />
       </head>
 
-      <body className="antialiased">
+      <body className="antialiased bg-background text-foreground">
         <Providers>
           <ApplicationLayout locale={locale}>
             {children}

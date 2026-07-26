@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { PropsWithChildren } from "react";
 import { ApplicationLayoutLangSelector } from './application-layout-lang-selector';
 import { ApplicationLayoutGhWidgets } from './application-layout-gh-widgets';
+import { ApplicationLayoutThemeToggle } from './application-layout-theme-toggle';
 import { LocaleKey } from '@/i18n/constants';
 
 type Props = {
@@ -12,28 +13,28 @@ type Props = {
 
 export const ApplicationLayout = ({ children, locale }: PropsWithChildren<Props>) => (
   <div className="min-h-screen flex flex-col">
-    <header className="bg-white border-b border-gray-200 ">
-      <div className="flex items-center px-6 py-1 justify-between w-full">
-        <div className="flex flex-row items-center">
-
+    <header className="sticky top-0 z-40 border-b border-divider bg-background/80 backdrop-blur-md backdrop-saturate-150">
+      <div className="flex items-center gap-2 px-4 sm:px-6 py-2 justify-between w-full max-w-6xl mx-auto">
+        <div className="flex flex-row items-center min-w-0">
           <Image
-            className='mr-2 w-[48px] h-[48px]'
+            className='mr-2 w-9 h-9 sm:w-11 sm:h-11'
             src={getAssetPath('/logo.png')}
             width={48}
             height={48}
             alt="TONify's logo"
           />
-          <h3 className="text-2xl font-bold">TONify</h3>
+          <h3 className="text-xl sm:text-2xl font-bold tracking-tight">TONify</h3>
         </div>
 
-        <div className="flex flex-row items-center">
-          <ApplicationLayoutGhWidgets className="flex flex-row items-center mr-1 pt-1" />
+        <div className="flex flex-row items-center gap-1">
+          <ApplicationLayoutGhWidgets className="hidden sm:flex flex-row items-center mr-1 pt-1" />
+          <ApplicationLayoutThemeToggle />
           <ApplicationLayoutLangSelector locale={locale} />
         </div>
       </div>
     </header>
 
-    <main className="flex-grow">
+    <main className="flex-grow w-full">
       {children}
     </main>
   </div>

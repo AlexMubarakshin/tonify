@@ -90,5 +90,21 @@ export const AddressConvertorHeaderColLabel = ({ colKey }: Props) => {
     )
   }
 
+  if (colKey === "testnetBounceable" || colKey === "testnetNonBounceable") {
+    const label =
+      colKey === "testnetBounceable"
+        ? t('index-page.testnetBounceable')
+        : t('index-page.testnetNonBounceable')
+
+    return (
+      <span className="inline-flex items-center gap-1.5 whitespace-nowrap">
+        <span className="inline-block px-1.5 py-0.5 rounded-md bg-warning-100 text-warning-700 text-[10px] font-semibold uppercase tracking-wide">
+          {t('index-page.testnet')}
+        </span>
+        {label}
+      </span>
+    )
+  }
+
   return null;
 }

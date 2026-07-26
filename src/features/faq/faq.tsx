@@ -27,7 +27,7 @@ export const Faq = () => {
   };
 
   return (
-    <section className="border-t border-gray-200 bg-white">
+    <section className="border-t border-divider bg-default-50">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold mb-6">{t("title")}</h2>
 
@@ -35,7 +35,7 @@ export const Faq = () => {
           {items.map((item, index) => (
             <div key={index}>
               <dt className="text-lg font-semibold mb-1">{item.q}</dt>
-              <dd className="text-gray-600 leading-relaxed">{item.a}</dd>
+              <dd className="text-default-500 leading-relaxed">{item.a}</dd>
             </div>
           ))}
         </dl>
