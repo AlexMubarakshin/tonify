@@ -1,9 +1,9 @@
 {
   "index-page": {
     "meta": {
-      "title": "TON Address converter | TONify",
-      "description": "TONify offers a powerful suite of tools designed to simplify and enhance your experience with the TON blockchain.",
-      "keywords": "convert ton address,TON address convert,TON address converter,ton convert address,TON address validation,TONify,TON blockchain,blockchain tools,TON blockchain tools,address management,TON wallet,TON blockchain explorer,TON address utilities,TONify address tools,cryptocurrency address converter,blockchain address tool,TON crypto tools"
+      "title": "TON Address Converter — EQ, UQ & Raw Formats | TONify",
+      "description": "Paste any TON address to convert between bounceable (EQ), non-bounceable (UQ), raw and testnet formats. Free, instant, and runs entirely in your browser.",
+      "keywords": "ton address converter,ton address,ton wallet address,convert ton address,ton address format,ton address example,bounceable address,non-bounceable address,EQ UQ ton address,raw ton address,ton address validator,ton address checker,TONify,TON blockchain tools"
     },
     "empty": "No addresses yet. Paste one above to get started.",
     "invalid": "<highlight>No valid addresses found</highlight>. Please provide a valid address.",
@@ -18,8 +18,9 @@
     "info": "info",
     "normalizedAddress": "Normalized Address",
     "conversionResults": "Converter Results",
-    "title": "TON Address converter Tool",
-    "description": "Quickly validate and convert TON addresses. Enter one or more addresses to check their validity and view normalized, raw, and formatted outputs.",
+    "title": "TON Address Converter",
+    "description": "Convert a TON address between bounceable (EQ), non-bounceable (UQ), raw and testnet formats. Paste one address or a whole list — everything is validated and converted locally in your browser.",
+    "guideCta": "New to TON addresses? Read the format guide",
     "textareaLabel": "TON Addresses",
     "textareaPlaceholder": "Paste TON addresses here (separated by spaces or new lines).",
     "loadExample": "Load example",
@@ -36,6 +37,114 @@
     "validCount": "{count} valid",
     "invalidCount": "{count} invalid"
   },
+  "guide": {
+    "meta": {
+      "title": "TON Address Format: EQ, UQ, Raw & Testnet Explained",
+      "description": "How a TON address is built — workchain ID, account ID and checksum — and what the EQ, UQ, kQ and 0Q prefixes mean, with a real example of every format.",
+      "keywords": "ton address format,ton address example,ton wallet address format,ton address format uq,eq uq ton address,raw ton address,ton testnet address,ton address prefix,ton address length,what is a ton address"
+    },
+    "breadcrumbHome": "TON Address Converter",
+    "breadcrumbCurrent": "TON Address Format",
+    "title": "TON address format explained",
+    "description": "How a TON address is built, and what the EQ, UQ, kQ and 0Q prefixes mean — with an example of every format.",
+    "intro": "Every account on The Open Network has a single identity but several valid text representations. This guide shows how a TON address is built, what the EQ, UQ, kQ and 0Q prefixes mean, and why the same wallet can look completely different depending on the format.",
+    "cta": "Convert a TON address",
+    "backToConverter": "Back to the converter",
+    "anatomy": {
+      "title": "What a TON address actually contains",
+      "body": "A TON address is a pair: a workchain ID that says which chain the account lives on, and a 256-bit account ID that identifies the contract on that chain. The masterchain is workchain -1, but nearly every wallet and token you will meet lives in the basechain, workchain 0.",
+      "rawTitle": "Raw format",
+      "rawBody": "The raw format writes that pair literally, as workchain:account_id with the account ID in lowercase hexadecimal. It carries no checksum and no network or bounceable flag, so it is used inside code, APIs and explorers rather than shared with people.",
+      "friendlyTitle": "User-friendly format",
+      "friendlyBody": "The user-friendly format packs the same account into 36 bytes and encodes them as 48 base64 characters. Those extra bytes are what make an address safe to copy and paste: a checksum catches typos, and a flag byte records the network and whether the address is bounceable.",
+      "col": { "part": "Part", "size": "Size", "meaning": "Meaning" },
+      "part": {
+        "flags": "Flag byte",
+        "workchain": "Workchain",
+        "account": "Account ID",
+        "checksum": "Checksum"
+      },
+      "meaning": {
+        "flags": "0x11 for bounceable, 0x51 for non-bounceable; add 0x80 to mark the address testnet-only.",
+        "workchain": "0x00 for the basechain, 0xFF for the masterchain.",
+        "account": "The 256-bit account ID — the same value as the hexadecimal half of the raw address.",
+        "checksum": "CRC-16 over the previous 34 bytes. This is what makes a mistyped address fail instantly."
+      }
+    },
+    "prefixes": {
+      "title": "What the EQ, UQ, kQ and 0Q prefixes mean",
+      "body": "The first two characters of a user-friendly address are a direct readout of the flag byte and the workchain, so you can tell the network and the bounceable setting at a glance — without decoding anything.",
+      "col": {
+        "prefix": "Prefix",
+        "network": "Network",
+        "bounceable": "Bounceable",
+        "workchain": "Workchain",
+        "use": "Typical use"
+      },
+      "network": { "mainnet": "Mainnet", "testnet": "Testnet" },
+      "chain": { "basechain": "Basechain (0)", "masterchain": "Masterchain (-1)" },
+      "yes": "Yes",
+      "no": "No",
+      "use": {
+        "eq": "Smart contracts and explorers — anything that should return funds if delivery fails.",
+        "uq": "Wallets and exchange deposits. The safest default for simply receiving TON.",
+        "kq": "Bounceable testnet address, used while developing and testing contracts.",
+        "zq": "Non-bounceable testnet address, used for test wallets.",
+        "ef": "Masterchain bounceable — validators and system contracts.",
+        "uf": "Masterchain non-bounceable — rarely seen outside infrastructure."
+      }
+    },
+    "examples": {
+      "title": "TON address examples",
+      "body": "All five strings below are the same account, written in every format TON supports. Notice that only the first two characters and the trailing checksum change — the middle of the address stays identical, because the account ID never changes.",
+      "col": { "format": "Format", "example": "Example" },
+      "label": {
+        "raw": "Raw",
+        "bounceable": "Bounceable (EQ)",
+        "nonBounceable": "Non-bounceable (UQ)",
+        "testnetBounceable": "Testnet bounceable (kQ)",
+        "testnetNonBounceable": "Testnet non-bounceable (0Q)"
+      }
+    },
+    "encoding": {
+      "title": "Encoding rules worth knowing",
+      "items": [
+        "A user-friendly TON address is always exactly 48 characters. If yours is shorter or longer, it is not a valid TON address.",
+        "Base64 is case-sensitive. EQCD… and eqcd… are different strings, and only the exact casing passes validation.",
+        "Two alphabets are in circulation: standard base64 uses + and /, while URL-safe base64 replaces them with - and _. Both decode to the same account, and TON tooling prefers the URL-safe form.",
+        "The raw format has no checksum, so nothing catches a typo for you. Always verify a raw address before sending funds."
+      ]
+    },
+    "howTo": {
+      "title": "How to convert a TON address",
+      "steps": [
+        "Paste one or more addresses into the converter. Raw, EQ, UQ, kQ and 0Q input all work, and you can paste an entire list separated by spaces or new lines.",
+        "Read every equivalent form side by side — bounceable, non-bounceable, raw and normalized, plus the testnet pair once you enable it.",
+        "Copy the form you need, or download the whole table as CSV. Nothing leaves your browser: the conversion runs locally."
+      ]
+    },
+    "mistakes": {
+      "title": "Common address problems",
+      "items": [
+        {
+          "q": "My wallet shows UQ but the explorer shows EQ",
+          "a": "Both are the same account. Explorers usually display the bounceable EQ form while wallets show the non-bounceable UQ form for deposits. Convert either one and compare the raw addresses to confirm they match."
+        },
+        {
+          "q": "An exchange rejected my TON address",
+          "a": "Most exchanges expect the mainnet non-bounceable UQ form for deposits. A bounceable EQ address can cause the transfer to be returned if the receiving contract has not been deployed yet."
+        },
+        {
+          "q": "Why does my testnet address not work on mainnet?",
+          "a": "A kQ or 0Q address has the testnet-only flag set, so mainnet wallets refuse it. The underlying account ID is identical — convert it to the EQ or UQ form to use the same account on mainnet."
+        },
+        {
+          "q": "Is a Telegram wallet address a TON address?",
+          "a": "Yes. Telegram Wallet, Tonkeeper and other TON wallets all use the same address format; only the display form differs between apps."
+        }
+      ]
+    }
+  },
   "faq": {
     "title": "Frequently asked questions",
     "items": [
@@ -44,6 +153,10 @@
       { "q": "What is a raw TON address?", "a": "The raw format is the low-level representation written as workchain:hex, for example 0:83dfd552e63729b472fcbcc8c45ebcc6691702558b68ec7527e1ba403a0f31a8. It is a 32-byte hash with an 8-bit workchain ID and is used programmatically rather than shared with users." },
       { "q": "What is a normalized TON address?", "a": "A normalized address is the canonical user-friendly form (URL-safe base64 with the bounceable flag off). Normalizing lets you reliably compare or deduplicate addresses that point to the same account." },
       { "q": "What do the EQ and UQ prefixes mean?", "a": "In user-friendly base64 addresses, EQ marks a mainnet bounceable address and UQ marks a mainnet non-bounceable address. Both encode the same account and differ only by the bounceable flag." },
+      { "q": "What do the kQ and 0Q prefixes mean?", "a": "They are the testnet counterparts of EQ and UQ: kQ is a bounceable testnet address and 0Q is a non-bounceable testnet address. Only the testnet-only bit in the flag byte is set, so the underlying account is the same." },
+      { "q": "How long is a TON address?", "a": "A user-friendly TON address is exactly 48 base64 characters. A raw address is the workchain ID, a colon, and 64 hexadecimal characters — for example 0: followed by the 32-byte account ID." },
+      { "q": "Are TON addresses case-sensitive?", "a": "Yes. User-friendly addresses are base64, so upper- and lower-case letters are different characters. Copy addresses instead of retyping them and rely on the built-in checksum — TONify flags any address that fails it." },
+      { "q": "How do I convert a TON address?", "a": "Paste it into the field above. TONify detects the format automatically, accepts raw, bounceable, non-bounceable and testnet input, and shows every equivalent form at once. You can paste several addresses together and export the result as CSV." },
       { "q": "Is TONify free and safe to use?", "a": "Yes. TONify is a free, open-source tool and all conversion happens locally in your browser — the addresses you paste are never sent to any server." }
     ]
   },

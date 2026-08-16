@@ -45,6 +45,17 @@ export const StructuredData = ({ locale, description }: Props) => {
         description,
         inLanguage,
         isAccessibleForFree: true,
+        // Technical format names, intentionally untranslated — they are the same
+        // tokens in every locale.
+        featureList: [
+          "Bounceable (EQ) address conversion",
+          "Non-bounceable (UQ) address conversion",
+          "Raw address conversion",
+          "Normalized address output",
+          "Testnet (kQ / 0Q) address conversion",
+          "Bulk address validation",
+          "CSV export",
+        ],
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         author: { "@id": `${rootUrl}#person` },
       },

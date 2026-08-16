@@ -15,6 +15,9 @@ import {
 } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 
+import Link from "next/link";
+import type { LocaleKey } from "@/i18n/constants";
+import { getLocaleHref } from "@/shared/utils/path";
 import {
   parseAndResult,
   addressResultsToTableData,
@@ -47,7 +50,11 @@ const ExternalLinkIcon = () => (
   </svg>
 );
 
-export const AddressConverter = () => {
+type Props = {
+  locale: LocaleKey;
+};
+
+export const AddressConverter = ({ locale }: Props) => {
   const t = useTranslations();
   const [raw, setRaw] = useState("");
   const [showTestnet, setShowTestnet] = useState(false);
@@ -78,6 +85,12 @@ export const AddressConverter = () => {
           {t("index-page.title")}
         </h1>
         <p className="text-default-500 max-w-2xl">{t("index-page.description")}</p>
+        <Link
+          href={getLocaleHref(locale, "/ton-address-format")}
+          className="inline-block mt-2 text-sm text-primary underline-offset-4 hover:underline"
+        >
+          {t("index-page.guideCta")}
+        </Link>
       </div>
 
       {/* Input */}

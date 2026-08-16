@@ -23,7 +23,9 @@ export const ApplicationLayout = ({ children, locale }: PropsWithChildren<Props>
             height={48}
             alt="TONify's logo"
           />
-          <h3 className="text-xl sm:text-2xl font-bold tracking-tight">TONify</h3>
+          {/* Wordmark, not a heading — an <h3> here put the document outline
+              at h3 before the page's own <h1>. */}
+          <span className="text-xl sm:text-2xl font-bold tracking-tight">TONify</span>
         </div>
 
         <div className="flex flex-row items-center gap-1">

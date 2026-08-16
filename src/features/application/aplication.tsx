@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-head-element */
 import { Providers } from "@/app/providers"
-import { DEFAULT_LOCALE, LocaleKey } from "@/i18n/constants"
+import { DEFAULT_LOCALE, LOCALE_HREFLANG, LocaleKey } from "@/i18n/constants"
 import { getManifestUrl } from "@/shared/utils/metadata"
 import { NextIntlClientProvider } from "next-intl"
 import { ApplicationLayout } from "../application-layout/application-layout"
@@ -19,7 +19,9 @@ export const Application = ({ messages, locale, children }: PropsWithChildren<Pr
 
   return (
   <NextIntlClientProvider messages={messages} locale={DEFAULT_LOCALE}>
-    <html lang={locale} suppressHydrationWarning>
+    {/* BCP-47 tag, not the route segment: `zh-cn` would disagree with the
+        `zh-Hans` hreflang, and Bing leans on <html lang> more than hreflang. */}
+    <html lang={LOCALE_HREFLANG[locale]} suppressHydrationWarning>
       <head>
         <link rel="manifest" href={getManifestUrl()} />
         <StructuredData locale={locale} description={description} />

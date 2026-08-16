@@ -17,10 +17,12 @@ export async function generateMetadata(
   return createMetaData('index-page', locale as LocaleKey, '');
 }
 
-export default function Home() {
+export default async function Home({ params }: Props) {
+  const { locale } = await params;
+
   return (
     <>
-      <AddressConverter />
+      <AddressConverter locale={locale as LocaleKey} />
       <Faq />
     </>
   );

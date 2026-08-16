@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn" />
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,7 +16,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn" />
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,8 +26,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn" />
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/ton-address-format</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-address-format" />
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/ru/ton-address-format</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-address-format" />
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/zh-cn/ton-address-format</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-address-format" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-address-format" />
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
