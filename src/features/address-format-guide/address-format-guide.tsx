@@ -111,12 +111,20 @@ export const AddressFormatGuide = ({ locale, pageUrl, converterUrl }: Props) => 
       <header className="flex flex-col gap-4">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">{t("title")}</h1>
         <p className="text-default-500 leading-relaxed">{t("intro")}</p>
-        <Link
-          href={getLocaleHref(locale)}
-          className="self-start rounded-medium bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
-        >
-          {t("cta")}
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href={getLocaleHref(locale)}
+            className="rounded-medium bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+          >
+            {t("cta")}
+          </Link>
+          <Link
+            href={getLocaleHref(locale, "/ton-wallet-address-checker")}
+            className="rounded-medium border border-divider px-4 py-2 text-sm font-medium"
+          >
+            {t("checkerCta")}
+          </Link>
+        </div>
       </header>
 
       <section className="flex flex-col gap-4">

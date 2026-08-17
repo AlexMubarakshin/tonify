@@ -85,12 +85,20 @@ export const AddressConverter = ({ locale }: Props) => {
           {t("index-page.title")}
         </h1>
         <p className="text-default-500 max-w-2xl">{t("index-page.description")}</p>
-        <Link
-          href={getLocaleHref(locale, "/ton-address-format")}
-          className="inline-block mt-2 text-sm text-primary underline-offset-4 hover:underline"
-        >
-          {t("index-page.guideCta")}
-        </Link>
+        <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2">
+          <Link
+            href={getLocaleHref(locale, "/ton-wallet-address-checker")}
+            className="text-sm text-primary underline-offset-4 hover:underline"
+          >
+            {t("index-page.checkerCta")}
+          </Link>
+          <Link
+            href={getLocaleHref(locale, "/ton-address-format")}
+            className="text-sm text-primary underline-offset-4 hover:underline"
+          >
+            {t("index-page.guideCta")}
+          </Link>
+        </div>
       </div>
 
       {/* Input */}

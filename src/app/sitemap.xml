@@ -31,6 +31,36 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-wallet-address-checker" />
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/ru/ton-wallet-address-checker</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-wallet-address-checker" />
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/zh-cn/ton-wallet-address-checker</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-wallet-address-checker" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-wallet-address-checker" />
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://alexmubarakshin.github.io/tonify/ton-address-format</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
     <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-address-format" />
