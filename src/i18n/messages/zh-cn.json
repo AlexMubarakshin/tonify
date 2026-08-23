@@ -409,5 +409,9 @@
       "buttonText": "在 GitHub 上标星",
       "ariaLabel": "在 GitHub 上标记 TONify 仓库为星标，以支持这个专为 TON 区块链设计的工具。"
     }
+  },
+  "tonApp": {
+    "title": "TON App 上的 TONify — 开发者工具第 9 名",
+    "alt": "TONify 在 TON App 开发者工具榜排名第 9"
   }
 }

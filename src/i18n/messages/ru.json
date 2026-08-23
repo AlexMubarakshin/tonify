@@ -409,5 +409,9 @@
       "buttonText": "Оценить на GitHub",
       "ariaLabel": "Отметьте звездой репозиторий TONify на GitHub, чтобы выразить свою поддержку этому инструменту."
     }
+  },
+  "tonApp": {
+    "title": "TONify в TON App — #9 среди Dev Tools",
+    "alt": "TONify занимает 9-е место среди Dev Tools в TON App"
   }
 }

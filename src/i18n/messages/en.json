@@ -409,5 +409,9 @@
       "buttonText": "Star on GitHub",
       "ariaLabel": "Star the TONify repository on GitHub to show your support for this TON blockchain tool."
     }
+  },
+  "tonApp": {
+    "title": "TONify on TON App — #9 Dev Tool",
+    "alt": "TONify ranked #9 Dev Tool on TON App"
   }
 }

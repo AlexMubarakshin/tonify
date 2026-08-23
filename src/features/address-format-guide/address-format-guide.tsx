@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import type { LocaleKey } from "@/i18n/constants";
 import { getLocaleHref } from "@/shared/utils/path";
+import { TonAppBadge } from "@/features/ton-app-badge/ton-app-badge";
 
 /** The account used across every example — the same one the converter loads. */
 const EXAMPLE = {
@@ -94,19 +95,22 @@ export const AddressFormatGuide = ({ locale, pageUrl, converterUrl }: Props) => 
 
   return (
     <article className="w-full max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 flex flex-col gap-10">
-      <nav aria-label="Breadcrumb" className="text-sm text-default-500">
-        <ol className="flex flex-wrap items-center gap-2">
-          <li>
-            <Link href={getLocaleHref(locale)} className="hover:text-primary underline-offset-4 hover:underline">
-              {t("breadcrumbHome")}
-            </Link>
-          </li>
-          <li aria-hidden="true">/</li>
-          <li aria-current="page" className="text-default-600">
-            {t("breadcrumbCurrent")}
-          </li>
-        </ol>
-      </nav>
+      <div className="flex items-center justify-between gap-4">
+        <nav aria-label="Breadcrumb" className="text-sm text-default-500">
+          <ol className="flex flex-wrap items-center gap-2">
+            <li>
+              <Link href={getLocaleHref(locale)} className="hover:text-primary underline-offset-4 hover:underline">
+                {t("breadcrumbHome")}
+              </Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" className="text-default-600">
+              {t("breadcrumbCurrent")}
+            </li>
+          </ol>
+        </nav>
+        <TonAppBadge size="inline" className="shrink-0" />
+      </div>
 
       <header className="flex flex-col gap-4">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">{t("title")}</h1>
