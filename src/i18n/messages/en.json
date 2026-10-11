@@ -162,9 +162,9 @@
   },
   "checker": {
     "meta": {
-      "title": "TON Wallet Address Checker — Validate Any TON Address | TONify",
-      "description": "Paste a TON wallet address to check whether it is valid. Instant checksum verification, EQ/UQ format detection and testnet warnings — free, and it runs in your browser.",
-      "keywords": "ton wallet address checker,check ton wallet address,how to check ton wallet address,ton address checker,ton address validator,ton wallet address,ton wallet address format,ton wallet address example,validate ton address,is my ton address valid,ton address verification"
+      "title": "TON Wallet Checker — Validate Address & Check Balance | TONify",
+      "description": "Free TON wallet checker: paste a TON wallet address to validate its checksum, detect EQ/UQ and testnet formats, and look up balance and status on-chain. Runs in your browser.",
+      "keywords": "ton wallet checker,ton wallet balance checker,check ton wallet balance,ton wallet lookup,ton wallet address checker,check ton wallet address,how to check ton wallet address,ton address checker,ton address validator,ton wallet address,ton wallet address format,ton wallet address example,validate ton address,is my ton address valid,ton address verification"
     },
     "breadcrumbHome": "TON Address Converter",
     "breadcrumbCurrent": "TON Wallet Address Checker",
@@ -413,5 +413,159 @@
   "tonApp": {
     "title": "TONify on TON App — #9 Dev Tool",
     "alt": "TONify ranked #9 Dev Tool on TON App"
+  },
+  "footer": {
+    "title": "TON tools",
+    "tagline": "Free TON blockchain tools that run entirely in your browser — no wallet connection, no sign-up.",
+    "openSource": "Open source on GitHub",
+    "links": {
+      "converter": "TON address converter",
+      "checker": "TON wallet checker",
+      "guide": "TON address format",
+      "testnet": "TON testnet faucet",
+      "stars": "Telegram Stars to TON"
+    }
+  },
+  "testnet": {
+    "meta": {
+      "title": "TON Testnet Faucet & Testnet Address Converter | TONify",
+      "description": "How to get free testnet TON from the official faucet, and convert any TON address between mainnet (EQ/UQ) and testnet (kQ/0Q) formats. Free, runs in your browser.",
+      "keywords": "ton testnet faucet,ton testnet,testnet ton,get testnet ton,ton faucet,testgiver ton bot,ton testnet address,kQ address,0Q address,convert ton address to testnet,ton testnet explorer"
+    },
+    "breadcrumbHome": "TON Address Converter",
+    "breadcrumbCurrent": "TON Testnet Faucet",
+    "title": "TON testnet faucet and testnet address converter",
+    "description": "Testnet TON has no value — it exists so you can test wallets, smart contracts and dApps without risking real funds. Below: how to get free testnet coins from the official faucet, and a converter that turns any mainnet address into its testnet form and back.",
+    "checkerCta": "Check a TON address",
+    "guideCta": "TON address format guide",
+    "converter": {
+      "title": "Convert a TON address to testnet (and back)",
+      "body": "Mainnet and testnet use the same account ID; only the flag byte differs. Paste any address — EQ, UQ, kQ, 0Q or raw — to get every form. Nothing is sent anywhere.",
+      "inputLabel": "Mainnet or testnet TON address",
+      "openTestnetExplorer": "Open in the testnet explorer",
+      "paste": "Paste",
+      "faucetAddress": "Your testnet address for the faucet",
+      "converted": "Converted from your mainnet address — same account, testnet format.",
+      "alreadyTestnet": "This is already a testnet address.",
+      "copyAndOpen": "Copy address & open faucet bot",
+      "copiedHint": "Copied — paste it into the bot.",
+      "allForms": "All address formats"
+    },
+    "faucet": {
+      "title": "How to get testnet TON",
+      "body": "The TON Foundation runs a Telegram bot that sends free testnet coins. It is the faucet linked from the official TON documentation.",
+      "steps": [
+        "Switch your wallet to testnet and copy your testnet address — it usually starts with 0Q or kQ. If you only have a mainnet address, convert it above.",
+        "Open @testgiver_ton_bot in Telegram and press Start.",
+        "Send the bot your testnet address and complete the check it asks for.",
+        "Wait a few seconds; the coins arrive in the same account on testnet. You can verify it in the testnet explorer."
+      ],
+      "note": "The bot gives a small amount per request and limits how often you can ask. If you need more for heavy testing, reuse the same wallet instead of creating new ones."
+    },
+    "wallet": {
+      "title": "Setting up a testnet wallet",
+      "body": "Any TON wallet key pair works on both networks — the account ID is the same. What changes is which network the app talks to.",
+      "steps": [
+        "Tonkeeper and most developer wallets have a testnet switch in their settings or developer menu; enable it and the app shows your kQ/0Q address.",
+        "In code, point your SDK (for example @ton/ton) at a testnet endpoint such as testnet.toncenter.com and use the same mnemonic.",
+        "Never send mainnet TON to a testnet-formatted address: exchanges and wallets reject kQ/0Q addresses on mainnet for that reason."
+      ]
+    },
+    "faq": {
+      "title": "TON testnet FAQ",
+      "items": [
+        {
+          "q": "Is testnet TON worth anything?",
+          "a": "No. Testnet coins cannot be sold or bridged to mainnet. They are given away so developers can test without spending real money."
+        },
+        {
+          "q": "What is the difference between a mainnet and a testnet TON address?",
+          "a": "Only one bit in the flag byte. That is why the same account appears as EQ/UQ on mainnet and kQ/0Q on testnet. The converter above flips that flag for you."
+        },
+        {
+          "q": "Where is the official TON testnet faucet?",
+          "a": "It is the Telegram bot @testgiver_ton_bot, linked from the TON documentation. Be careful with lookalike bots or sites that ask for a seed phrase — a faucet only ever needs your address."
+        },
+        {
+          "q": "Why didn't my testnet coins arrive?",
+          "a": "Most often the wallet is still showing mainnet. Switch it to testnet, or open the address in the testnet explorer to see the incoming transfer."
+        },
+        {
+          "q": "Can I use my mainnet wallet on testnet?",
+          "a": "Yes. The same mnemonic gives the same account on both networks; balances and history are completely separate."
+        }
+      ]
+    },
+    "flow": {
+      "step1": "Get your testnet address",
+      "step2": "Request coins from the faucet bot"
+    }
+  },
+  "stars": {
+    "meta": {
+      "title": "Telegram Stars to TON Calculator — Stars to TON & USD | TONify",
+      "description": "Convert Telegram Stars to TON and USD with the live TON price. Uses the Fragment withdrawal rate by default, with the purchase rate one click away. Free, no sign-up.",
+      "keywords": "telegram stars to ton,stars to ton,telegram stars to usd,telegram stars calculator,how much is a telegram star,telegram stars price,withdraw telegram stars to ton,fragment stars withdrawal,stars to ton converter"
+    },
+    "breadcrumbHome": "TON Address Converter",
+    "breadcrumbCurrent": "Telegram Stars to TON",
+    "title": "Telegram Stars to TON calculator",
+    "description": "Find out how much TON and USD your Telegram Stars are worth. The TON price is loaded live; the Star rate is editable, so you can model both withdrawals and purchases.",
+    "starsLabel": "Number of Stars",
+    "starUsdLabel": "USD per Star",
+    "tonUsdLabel": "TON price in USD (override)",
+    "rate": {
+      "title": "Star rate",
+      "withdraw": "Withdrawal ≈ ${usd}",
+      "buy": "Purchase ≈ ${usd}",
+      "withdrawHint": "What bots and channels receive per Star when they withdraw earnings as TON through Fragment.",
+      "buyHint": "Roughly what a user pays per Star for a small pack in the app. Larger packs and other platforms are cheaper per Star.",
+      "custom": "Custom"
+    },
+    "price": {
+      "loading": "Loading the live TON price…",
+      "live": "Live price: ${price} (CoinGecko)",
+      "failed": "Could not load the live price — enter it manually.",
+      "title": "TON price",
+      "edit": "Edit",
+      "useLive": "Use live price"
+    },
+    "result": {
+      "ton": "In TON",
+      "usd": "In USD",
+      "empty": "Enter a number of Stars and a rate to see the result."
+    },
+    "disclaimer": "Estimate only. Telegram sets Star rates and may change them; Fragment and network fees are not included. Not financial advice.",
+    "checkerCta": "Check your TON wallet address before withdrawing",
+    "howTo": {
+      "title": "How to convert Telegram Stars to TON",
+      "steps": [
+        "Stars earned by a bot or channel can be withdrawn once they clear Telegram's holding period.",
+        "Open the bot or channel's monetization settings and choose to withdraw Stars via Fragment.",
+        "Connect a TON wallet on Fragment and confirm; the TON arrives at that wallet's address.",
+        "Double-check the receiving address with the TONify wallet checker before you confirm."
+      ]
+    },
+    "faq": {
+      "title": "Telegram Stars FAQ",
+      "items": [
+        {
+          "q": "How much is 1 Telegram Star in TON?",
+          "a": "At the withdrawal rate of about $0.013 per Star, one Star is worth $0.013 divided by the current TON price. The calculator above does this with the live price."
+        },
+        {
+          "q": "Why is the purchase price higher than the withdrawal rate?",
+          "a": "Users buy Stars through app stores and Telegram, which take a commission. Creators receive the lower withdrawal rate when they cash out."
+        },
+        {
+          "q": "Can regular users convert Stars to TON?",
+          "a": "Withdrawals are available for Stars earned by bots and channels. Stars a user bought for themselves are meant to be spent inside Telegram."
+        },
+        {
+          "q": "Are the rates in this calculator official?",
+          "a": "They are defaults based on publicly reported rates and are editable. Always check the amount Fragment shows before confirming a withdrawal."
+        }
+      ]
+    }
   }
 }

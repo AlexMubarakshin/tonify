@@ -36,7 +36,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-wallet-address-checker" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-wallet-address-checker" />
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,7 +46,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-wallet-address-checker" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-wallet-address-checker" />
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -56,7 +56,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-wallet-address-checker" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-wallet-address-checker" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-wallet-address-checker" />
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -87,6 +87,66 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-address-format" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-address-format" />
     <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/ton-testnet-faucet</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-testnet-faucet" />
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/ru/ton-testnet-faucet</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-testnet-faucet" />
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/zh-cn/ton-testnet-faucet</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/ton-testnet-faucet" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/ton-testnet-faucet" />
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/telegram-stars-to-ton</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/telegram-stars-to-ton" />
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/ru/telegram-stars-to-ton</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/telegram-stars-to-ton" />
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alexmubarakshin.github.io/tonify/zh-cn/telegram-stars-to-ton</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexmubarakshin.github.io/tonify/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexmubarakshin.github.io/tonify/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexmubarakshin.github.io/tonify/ru/telegram-stars-to-ton" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alexmubarakshin.github.io/tonify/zh-cn/telegram-stars-to-ton" />
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

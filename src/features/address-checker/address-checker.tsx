@@ -6,9 +6,9 @@ import { Input } from "@nextui-org/input";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import type { LocaleKey } from "@/i18n/constants";
+import { LOCALE_HREFLANG, type LocaleKey } from "@/i18n/constants";
 import { getLocaleHref } from "@/shared/utils/path";
-import { TonAppBadge } from "@/features/ton-app-badge/ton-app-badge";
+import { ToolPageBreadcrumb } from "@/features/tool-page/tool-page-breadcrumb";
 import { checkAddress, explorerUrl, EXAMPLE_ADDRESS } from "./validate";
 import { AddressCheckerVerdict } from "./address-checker-verdict";
 import { AddressCheckerOnChain } from "./address-checker-on-chain";
@@ -58,7 +58,7 @@ export const AddressChecker = ({ locale, pageUrl, converterUrl }: Props) => {
         operatingSystem: "Any",
         browserRequirements: "Requires JavaScript",
         description: t("meta.description"),
-        inLanguage: locale === "zh-cn" ? "zh-Hans" : locale,
+        inLanguage: LOCALE_HREFLANG[locale],
         isAccessibleForFree: true,
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         featureList: [
@@ -102,25 +102,11 @@ export const AddressChecker = ({ locale, pageUrl, converterUrl }: Props) => {
 
   return (
     <article className="w-full max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 flex flex-col gap-10">
-      <div className="flex items-center justify-between gap-4">
-        <nav aria-label="Breadcrumb" className="text-sm text-default-500">
-          <ol className="flex flex-wrap items-center gap-2">
-            <li>
-              <Link
-                href={getLocaleHref(locale)}
-                className="hover:text-primary underline-offset-4 hover:underline"
-              >
-                {t("breadcrumbHome")}
-              </Link>
-            </li>
-            <li aria-hidden="true">/</li>
-            <li aria-current="page" className="text-default-600">
-              {t("breadcrumbCurrent")}
-            </li>
-          </ol>
-        </nav>
-        <TonAppBadge size="inline" className="shrink-0" />
-      </div>
+      <ToolPageBreadcrumb
+        locale={locale}
+        home={t("breadcrumbHome")}
+        current={t("breadcrumbCurrent")}
+      />
 
       <header className="flex flex-col gap-3">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">{t("title")}</h1>

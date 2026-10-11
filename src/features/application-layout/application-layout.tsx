@@ -5,6 +5,7 @@ import { PropsWithChildren } from "react";
 import { ApplicationLayoutLangSelector } from './application-layout-lang-selector';
 import { ApplicationLayoutGhWidgets } from './application-layout-gh-widgets';
 import { ApplicationLayoutThemeToggle } from './application-layout-theme-toggle';
+import { ApplicationLayoutFooter } from './application-layout-footer';
 import { LocaleKey } from '@/i18n/constants';
 
 type Props = {
@@ -39,5 +40,7 @@ export const ApplicationLayout = ({ children, locale }: PropsWithChildren<Props>
     <main className="flex-grow w-full">
       {children}
     </main>
+
+    <ApplicationLayoutFooter locale={locale} />
   </div>
 )

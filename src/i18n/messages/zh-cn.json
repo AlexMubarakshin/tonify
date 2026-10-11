@@ -162,9 +162,9 @@
   },
   "checker": {
     "meta": {
-      "title": "TON 钱包地址检查工具 — 在线验证 TON 地址 | TONify",
-      "description": "粘贴 TON 钱包地址即可立即判断是否有效：校验和验证、EQ/UQ 格式识别、测试网提醒，全部在浏览器中完成，完全免费。",
-      "keywords": "TON 钱包地址检查,检查 TON 钱包地址,如何检查 TON 地址,TON 地址验证,TON 地址检查器,TON 钱包地址,TON 钱包地址格式,TON 地址示例,TON 地址是否有效"
+      "title": "TON 钱包检查工具 — 验证地址并查询余额 | TONify",
+      "description": "免费 TON 钱包检查工具：粘贴 TON 钱包地址，即可校验校验和、识别 EQ/UQ 和测试网格式，并在链上查询余额与状态。在浏览器中运行。",
+      "keywords": "ton 钱包检查,ton 钱包余额查询,查询 ton 钱包余额,ton wallet checker,TON 钱包地址检查,检查 TON 钱包地址,如何检查 TON 地址,TON 地址验证,TON 地址检查器,TON 钱包地址,TON 钱包地址格式,TON 地址示例,TON 地址是否有效"
     },
     "breadcrumbHome": "TON 地址转换器",
     "breadcrumbCurrent": "TON 钱包地址检查",
@@ -413,5 +413,159 @@
   "tonApp": {
     "title": "TON App 上的 TONify — 开发者工具第 9 名",
     "alt": "TONify 在 TON App 开发者工具榜排名第 9"
+  },
+  "footer": {
+    "title": "TON 工具",
+    "tagline": "免费的 TON 区块链工具，完全在浏览器中运行——无需连接钱包，无需注册。",
+    "openSource": "在 GitHub 上开源",
+    "links": {
+      "converter": "TON 地址转换器",
+      "checker": "TON 钱包检查",
+      "guide": "TON 地址格式",
+      "testnet": "TON 测试网水龙头",
+      "stars": "Telegram Stars 转 TON"
+    }
+  },
+  "testnet": {
+    "meta": {
+      "title": "TON 测试网水龙头与测试网地址转换 | TONify",
+      "description": "如何从官方水龙头免费领取测试网 TON，以及在主网（EQ/UQ）和测试网（kQ/0Q）格式之间转换任意 TON 地址。免费，在浏览器中运行。",
+      "keywords": "ton 测试网水龙头,ton testnet faucet,ton 测试网,领取测试网 ton,ton 水龙头,testgiver ton bot,ton 测试网地址,kQ 地址,0Q 地址,ton 地址转测试网"
+    },
+    "breadcrumbHome": "TON 地址转换器",
+    "breadcrumbCurrent": "TON 测试网水龙头",
+    "title": "TON 测试网水龙头与测试网地址转换",
+    "description": "测试网 TON 没有价值，它的用途是让你在不冒真实资金风险的情况下测试钱包、智能合约和 dApp。下面介绍如何从官方水龙头免费领取测试币，并提供一个在主网与测试网地址之间互相转换的工具。",
+    "checkerCta": "检查 TON 地址",
+    "guideCta": "TON 地址格式指南",
+    "converter": {
+      "title": "将 TON 地址转换为测试网格式（及反向转换）",
+      "body": "主网和测试网使用相同的账户 ID，只有标志字节不同。粘贴任意地址（EQ、UQ、kQ、0Q 或 raw）即可得到所有格式。数据不会发送到任何地方。",
+      "inputLabel": "主网或测试网 TON 地址",
+      "openTestnetExplorer": "在测试网浏览器中打开",
+      "paste": "粘贴",
+      "faucetAddress": "用于水龙头的测试网地址",
+      "converted": "由你的主网地址转换而来——同一账户，测试网格式。",
+      "alreadyTestnet": "这已经是测试网地址。",
+      "copyAndOpen": "复制地址并打开水龙头机器人",
+      "copiedHint": "已复制——粘贴到机器人中即可。",
+      "allForms": "所有地址格式"
+    },
+    "faucet": {
+      "title": "如何领取测试网 TON",
+      "body": "TON 基金会运营着一个免费发放测试币的 Telegram 机器人，这也是 TON 官方文档中链接的水龙头。",
+      "steps": [
+        "将钱包切换到测试网并复制测试网地址，通常以 0Q 或 kQ 开头。如果只有主网地址，可以在上方转换。",
+        "在 Telegram 中打开 @testgiver_ton_bot 并点击 Start。",
+        "把测试网地址发送给机器人，并完成它要求的验证。",
+        "等待几秒钟，测试币会到达测试网上的同一账户，可在测试网浏览器中确认。"
+      ],
+      "note": "机器人每次只发放少量测试币，并限制请求频率。如果测试需要更多，请重复使用同一个钱包，而不是新建钱包。"
+    },
+    "wallet": {
+      "title": "设置测试网钱包",
+      "body": "任何 TON 钱包密钥对都可以同时用于两个网络，账户 ID 相同，变化的只是应用连接的网络。",
+      "steps": [
+        "Tonkeeper 和大多数开发者钱包在设置或开发者菜单中提供测试网开关，开启后应用会显示你的 kQ/0Q 地址。",
+        "在代码中，将 SDK（例如 @ton/ton）指向测试网节点，如 testnet.toncenter.com，并使用相同的助记词。",
+        "不要把主网 TON 发送到测试网格式的地址，这正是交易所和钱包在主网拒绝 kQ/0Q 地址的原因。"
+      ]
+    },
+    "faq": {
+      "title": "TON 测试网常见问题",
+      "items": [
+        {
+          "q": "测试网 TON 值钱吗？",
+          "a": "不值钱。测试币无法出售，也不能跨到主网。它们免费发放，方便开发者在不花真钱的情况下测试。"
+        },
+        {
+          "q": "TON 主网地址和测试网地址有什么区别？",
+          "a": "只差标志字节中的一个比特。因此同一账户在主网显示为 EQ/UQ，在测试网显示为 kQ/0Q。上面的转换器会帮你切换这个标志。"
+        },
+        {
+          "q": "官方 TON 测试网水龙头在哪里？",
+          "a": "是 TON 文档中链接的 Telegram 机器人 @testgiver_ton_bot。警惕索要助记词的仿冒机器人或网站——水龙头只需要你的地址。"
+        },
+        {
+          "q": "为什么测试币没有到账？",
+          "a": "最常见的原因是钱包仍显示主网。请将钱包切换到测试网，或在测试网浏览器中打开地址查看入账记录。"
+        },
+        {
+          "q": "主网钱包可以用于测试网吗？",
+          "a": "可以。同一助记词在两个网络上对应同一账户，但余额和交易记录完全独立。"
+        }
+      ]
+    },
+    "flow": {
+      "step1": "获取测试网地址",
+      "step2": "向水龙头机器人领取测试币"
+    }
+  },
+  "stars": {
+    "meta": {
+      "title": "Telegram Stars 转 TON 计算器 — Stars 兑 TON 与美元 | TONify",
+      "description": "按实时 TON 价格将 Telegram Stars 换算为 TON 和美元。默认使用 Fragment 提现汇率，一键切换购买价。免费，无需注册。",
+      "keywords": "telegram stars 转 ton,telegram 星星 换 ton,telegram stars 价格,telegram stars 计算器,一颗 telegram star 多少钱,telegram stars 提现,fragment 提现 stars,stars to ton"
+    },
+    "breadcrumbHome": "TON 地址转换器",
+    "breadcrumbCurrent": "Telegram Stars 转 TON",
+    "title": "Telegram Stars 转 TON 计算器",
+    "description": "计算你的 Telegram Stars 值多少 TON 和美元。TON 价格实时加载，Star 汇率可编辑，可同时估算提现和购买。",
+    "starsLabel": "Stars 数量",
+    "starUsdLabel": "每颗 Star 的美元价格",
+    "tonUsdLabel": "TON 美元价格（手动覆盖）",
+    "rate": {
+      "title": "Star 汇率",
+      "withdraw": "提现 ≈ ${usd}",
+      "buy": "购买 ≈ ${usd}",
+      "withdrawHint": "机器人和频道通过 Fragment 将收入提现为 TON 时，每颗 Star 获得的金额。",
+      "buyHint": "用户在应用内购买小额套餐时每颗 Star 的大致价格。大额套餐和其他平台的单价更低。",
+      "custom": "自定义"
+    },
+    "price": {
+      "loading": "正在加载实时 TON 价格…",
+      "live": "实时价格：${price}（CoinGecko）",
+      "failed": "无法加载实时价格，请手动输入。",
+      "title": "TON 价格",
+      "edit": "修改",
+      "useLive": "使用实时价格"
+    },
+    "result": {
+      "ton": "TON",
+      "usd": "美元",
+      "empty": "输入 Stars 数量和汇率即可查看结果。"
+    },
+    "disclaimer": "仅为估算。Star 汇率由 Telegram 设定并可能调整；未计入 Fragment 和网络手续费。不构成投资建议。",
+    "checkerCta": "提现前检查你的 TON 钱包地址",
+    "howTo": {
+      "title": "如何将 Telegram Stars 换成 TON",
+      "steps": [
+        "机器人或频道赚取的 Stars 在 Telegram 的锁定期结束后即可提现。",
+        "打开机器人或频道的变现设置，选择通过 Fragment 提现 Stars。",
+        "在 Fragment 上连接 TON 钱包并确认，TON 会到达该钱包地址。",
+        "确认前，请用 TONify 钱包检查工具核对收款地址。"
+      ]
+    },
+    "faq": {
+      "title": "Telegram Stars 常见问题",
+      "items": [
+        {
+          "q": "1 颗 Telegram Star 等于多少 TON？",
+          "a": "按约 0.013 美元/颗的提现汇率，一颗 Star 的价值为 0.013 美元除以当前 TON 价格。上面的计算器会用实时价格完成换算。"
+        },
+        {
+          "q": "为什么购买价高于提现汇率？",
+          "a": "用户通过应用商店和 Telegram 购买 Stars，平台会抽取佣金；创作者提现时拿到的是较低的汇率。"
+        },
+        {
+          "q": "普通用户可以把 Stars 换成 TON 吗？",
+          "a": "提现仅适用于机器人和频道赚取的 Stars。用户自己购买的 Stars 用于在 Telegram 内消费。"
+        },
+        {
+          "q": "计算器里的汇率是官方的吗？",
+          "a": "这些是基于公开汇率的默认值，可以修改。确认提现前，请以 Fragment 显示的金额为准。"
+        }
+      ]
+    }
   }
 }

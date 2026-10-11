@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Chip } from "@nextui-org/react";
-import { CopyButton } from "../address-convertor/address-convertor-cell";
+import { CopyButton } from "@/shared/ui/copy-button";
 import type { AddressForms, CheckResult } from "./validate";
 
 const FORM_KEYS: (keyof AddressForms)[] = [
