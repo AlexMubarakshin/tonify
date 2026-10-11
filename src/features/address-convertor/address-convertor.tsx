@@ -30,6 +30,7 @@ import { AddressConvertorHeaderColLabel } from "./address-convertor-header-col-l
 import { AddressConvertorTablePlaceholder } from "./address-convertor-table-placeholder";
 import { AddressCell } from "./address-convertor-cell";
 import { AddressConvertorDownload } from "./address-convertor-download";
+import { DonateBlock } from "@/features/donate/donate-block";
 
 const BASE_COLUMNS: AddressResultTableDataKey[] = [
   "toStringBounceable",
@@ -58,6 +59,7 @@ export const AddressConverter = ({ locale }: Props) => {
   const t = useTranslations();
   const [raw, setRaw] = useState("");
   const [showTestnet, setShowTestnet] = useState(false);
+  const [hasDownloaded, setHasDownloaded] = useState(false);
 
   const { results, invalidCount } = useMemo(() => parseAndResult(raw), [raw]);
   const rows = useMemo(() => addressResultsToTableData(results), [results]);
@@ -131,7 +133,11 @@ export const AddressConverter = ({ locale }: Props) => {
             >
               {t("index-page.clear")}
             </Button>
-            <AddressConvertorDownload rows={rows} showTestnet={showTestnet} />
+            <AddressConvertorDownload
+              rows={rows}
+              showTestnet={showTestnet}
+              onDownload={() => setHasDownloaded(true)}
+            />
           </div>
 
           <div className="flex items-center gap-4">
@@ -216,6 +222,8 @@ export const AddressConverter = ({ locale }: Props) => {
           )}
         </TableBody>
       </Table>
+
+      <DonateBlock downloaded={hasDownloaded} />
     </div>
   );
 };

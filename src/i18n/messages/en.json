@@ -99,7 +99,7 @@
       "no": "No",
       "use": {
         "eq": "Smart contracts and explorers — anything that should return funds if delivery fails.",
-        "uq": "Wallets and exchange deposits. The safest default for simply receiving TON.",
+        "uq": "Wallets and exchange deposits. The safest default for simply receiving GRAM.",
         "kq": "Bounceable testnet address, used while developing and testing contracts.",
         "zq": "Non-bounceable testnet address, used for test wallets.",
         "ef": "Masterchain bounceable — validators and system contracts.",
@@ -183,7 +183,7 @@
       "invalid": "Not a valid TON address"
     },
     "issue": {
-      "chainEvm": "This is an Ethereum-style address (Ethereum, BNB Chain, Polygon and similar). TON addresses never start with 0x — sending TON here would lose the funds.",
+      "chainEvm": "This is an Ethereum-style address (Ethereum, BNB Chain, Polygon and similar). TON addresses never start with 0x — sending GRAM here would lose the funds.",
       "chainBitcoin": "This looks like a Bitcoin address, not a TON address. Make sure you copied the address from the right network.",
       "chainTron": "This looks like a Tron (TRC-20) address, not a TON address. Tron addresses start with T and are 34 characters long.",
       "chainSolana": "This looks like a Solana address, not a TON address. A TON address is 48 characters long and starts with EQ, UQ, kQ or 0Q.",
@@ -202,7 +202,7 @@
       "testnet": "This is a testnet-only address. Mainnet wallets and exchanges will refuse it — the same account on mainnet is the EQ or UQ form below.",
       "masterchain": "This address is in the masterchain (workchain -1), which is used by validators and system contracts rather than ordinary wallets.",
       "bounceable": "This is the bounceable (EQ) form. It returns the funds if the destination cannot process the transfer, which is what you want for smart contracts. For an exchange deposit, use the non-bounceable UQ form below.",
-      "nonBounceable": "This is the non-bounceable (UQ) form — the one wallets show for receiving TON and the one most exchanges expect for deposits.",
+      "nonBounceable": "This is the non-bounceable (UQ) form — the one wallets show for receiving GRAM and the one most exchanges expect for deposits.",
       "standardBase64": "The address uses the standard base64 alphabet with + and /. That is valid, but some services only accept the URL-safe form with - and _, shown below.",
       "rawInput": "Raw addresses carry no checksum, so nothing can catch a typo in them. Compare it against the user-friendly form below before you send anything."
     },
@@ -244,7 +244,7 @@
       "isWallet": "Wallet contract",
       "isScam": "Flagged as scam",
       "source": "Data from tonapi.io.",
-      "uninitExplainer": "An uninitialised account has never sent a transaction, so its contract is not deployed yet. This is normal for a brand-new wallet — it can still receive TON, but only through the non-bounceable UQ address.",
+      "uninitExplainer": "An uninitialised account has never sent a transaction, so its contract is not deployed yet. This is normal for a brand-new wallet — it can still receive GRAM, but only through the non-bounceable UQ address.",
       "testnetUnavailable": "On-chain lookup is available for mainnet addresses only.",
       "status": {
         "active": "Active",
@@ -283,7 +283,7 @@
     "example": {
       "title": "What a TON wallet address looks like",
       "body": "A TON wallet address in its user-friendly form is 48 characters long and looks like this:",
-      "prefixes": "The first two characters tell you what you are looking at: UQ is a mainnet non-bounceable address — the form wallets show for receiving TON — while EQ is the bounceable form used for smart contracts. kQ and 0Q are their testnet counterparts, and a raw address is written instead as 0: followed by 64 hexadecimal characters. All of them can point at the same account.",
+      "prefixes": "The first two characters tell you what you are looking at: UQ is a mainnet non-bounceable address — the form wallets show for receiving GRAM — while EQ is the bounceable form used for smart contracts. kQ and 0Q are their testnet counterparts, and a raw address is written instead as 0: followed by 64 hexadecimal characters. All of them can point at the same account.",
       "guideCta": "Read the full TON address format guide"
     },
     "where": {
@@ -296,11 +296,11 @@
         },
         {
           "wallet": "Telegram Wallet (@wallet)",
-          "steps": "Open @wallet in Telegram, choose Deposit, then Toncoin. Telegram shows the address for the TON network along with a QR code."
+          "steps": "Open @wallet in Telegram, choose Deposit, then Gram. Telegram shows the address for the TON network along with a QR code."
         },
         {
           "wallet": "Trust Wallet",
-          "steps": "Find TON in your token list — search for it if it is hidden — then tap Receive. Make sure the network shown is TON and not a TON token on another chain."
+          "steps": "Find GRAM in your token list — search for it if it is hidden — then tap Receive. Make sure the network shown is TON and not a TON token on another chain."
         },
         {
           "wallet": "MyTonWallet",
@@ -308,7 +308,7 @@
         },
         {
           "wallet": "An exchange deposit address",
-          "steps": "Open the TON deposit page and select the TON network. Many exchanges also give you a memo or comment that has to be sent with the transfer — the deposit will not be credited without it, and no address checker can verify that part for you."
+          "steps": "Open the GRAM deposit page and select the TON network. Many exchanges also give you a memo or comment that has to be sent with the transfer — the deposit will not be credited without it, and no address checker can verify that part for you."
         }
       ]
     },
@@ -337,7 +337,7 @@
         },
         {
           "q": "Why does my address start with UQ instead of EQ?",
-          "a": "Both belong to the same account. UQ is the non-bounceable form that wallets show for receiving TON, and EQ is the bounceable form used for smart contracts and shown by most explorers. The checker displays both so you can confirm they match."
+          "a": "Both belong to the same account. UQ is the non-bounceable form that wallets show for receiving GRAM, and EQ is the bounceable form used for smart contracts and shown by most explorers. The checker displays both so you can confirm they match."
         },
         {
           "q": "What if my address starts with kQ or 0Q?",
@@ -423,13 +423,13 @@
       "checker": "TON wallet checker",
       "guide": "TON address format",
       "testnet": "TON testnet faucet",
-      "stars": "Telegram Stars to TON"
+      "stars": "Telegram Stars to GRAM"
     }
   },
   "testnet": {
     "meta": {
       "title": "TON Testnet Faucet & Testnet Address Converter | TONify",
-      "description": "How to get free testnet TON from the official faucet, and convert any TON address between mainnet (EQ/UQ) and testnet (kQ/0Q) formats. Free, runs in your browser.",
+      "description": "How to get free testnet GRAM from the official faucet, and convert any TON address between mainnet (EQ/UQ) and testnet (kQ/0Q) formats. Free, runs in your browser.",
       "keywords": "ton testnet faucet,ton testnet,testnet ton,get testnet ton,ton faucet,testgiver ton bot,ton testnet address,kQ address,0Q address,convert ton address to testnet,ton testnet explorer"
     },
     "breadcrumbHome": "TON Address Converter",
@@ -452,7 +452,7 @@
       "allForms": "All address formats"
     },
     "faucet": {
-      "title": "How to get testnet TON",
+      "title": "How to get testnet GRAM",
       "body": "The TON Foundation runs a Telegram bot that sends free testnet coins. It is the faucet linked from the official TON documentation.",
       "steps": [
         "Switch your wallet to testnet and copy your testnet address — it usually starts with 0Q or kQ. If you only have a mainnet address, convert it above.",
@@ -468,14 +468,14 @@
       "steps": [
         "Tonkeeper and most developer wallets have a testnet switch in their settings or developer menu; enable it and the app shows your kQ/0Q address.",
         "In code, point your SDK (for example @ton/ton) at a testnet endpoint such as testnet.toncenter.com and use the same mnemonic.",
-        "Never send mainnet TON to a testnet-formatted address: exchanges and wallets reject kQ/0Q addresses on mainnet for that reason."
+        "Never send mainnet GRAM to a testnet-formatted address: exchanges and wallets reject kQ/0Q addresses on mainnet for that reason."
       ]
     },
     "faq": {
       "title": "TON testnet FAQ",
       "items": [
         {
-          "q": "Is testnet TON worth anything?",
+          "q": "Is testnet GRAM worth anything?",
           "a": "No. Testnet coins cannot be sold or bridged to mainnet. They are given away so developers can test without spending real money."
         },
         {
@@ -503,42 +503,42 @@
   },
   "stars": {
     "meta": {
-      "title": "Telegram Stars to TON Calculator — Stars to TON & USD | TONify",
-      "description": "Convert Telegram Stars to TON and USD with the live TON price. Uses the Fragment withdrawal rate by default, with the purchase rate one click away. Free, no sign-up.",
+      "title": "Telegram Stars to GRAM Calculator — Stars to GRAM & USD | TONify",
+      "description": "Convert Telegram Stars to GRAM and USD with the live GRAM price. Uses the Fragment withdrawal rate by default, with the purchase rate one click away. Free, no sign-up.",
       "keywords": "telegram stars to ton,stars to ton,telegram stars to usd,telegram stars calculator,how much is a telegram star,telegram stars price,withdraw telegram stars to ton,fragment stars withdrawal,stars to ton converter"
     },
     "breadcrumbHome": "TON Address Converter",
-    "breadcrumbCurrent": "Telegram Stars to TON",
-    "title": "Telegram Stars to TON calculator",
-    "description": "Find out how much TON and USD your Telegram Stars are worth. The TON price is loaded live; the Star rate is editable, so you can model both withdrawals and purchases.",
+    "breadcrumbCurrent": "Telegram Stars to GRAM",
+    "title": "Telegram Stars to GRAM calculator",
+    "description": "Find out how much GRAM and USD your Telegram Stars are worth. The GRAM price is loaded live; the Star rate is editable, so you can model both withdrawals and purchases.",
     "starsLabel": "Number of Stars",
     "starUsdLabel": "USD per Star",
-    "tonUsdLabel": "TON price in USD (override)",
+    "tonUsdLabel": "GRAM price in USD (override)",
     "rate": {
       "title": "Star rate",
       "withdraw": "Withdrawal ≈ ${usd}",
       "buy": "Purchase ≈ ${usd}",
-      "withdrawHint": "What bots and channels receive per Star when they withdraw earnings as TON through Fragment.",
+      "withdrawHint": "What bots and channels receive per Star when they withdraw earnings as GRAM through Fragment.",
       "buyHint": "Roughly what a user pays per Star for a small pack in the app. Larger packs and other platforms are cheaper per Star.",
       "custom": "Custom"
     },
     "price": {
-      "loading": "Loading the live TON price…",
+      "loading": "Loading the live GRAM price…",
       "live": "Live price: ${price} (CoinGecko)",
       "failed": "Could not load the live price — enter it manually.",
-      "title": "TON price",
+      "title": "GRAM price",
       "edit": "Edit",
       "useLive": "Use live price"
     },
     "result": {
-      "ton": "In TON",
+      "ton": "In GRAM",
       "usd": "In USD",
       "empty": "Enter a number of Stars and a rate to see the result."
     },
     "disclaimer": "Estimate only. Telegram sets Star rates and may change them; Fragment and network fees are not included. Not financial advice.",
     "checkerCta": "Check your TON wallet address before withdrawing",
     "howTo": {
-      "title": "How to convert Telegram Stars to TON",
+      "title": "How to convert Telegram Stars to GRAM",
       "steps": [
         "Stars earned by a bot or channel can be withdrawn once they clear Telegram's holding period.",
         "Open the bot or channel's monetization settings and choose to withdraw Stars via Fragment.",
@@ -550,15 +550,15 @@
       "title": "Telegram Stars FAQ",
       "items": [
         {
-          "q": "How much is 1 Telegram Star in TON?",
-          "a": "At the withdrawal rate of about $0.013 per Star, one Star is worth $0.013 divided by the current TON price. The calculator above does this with the live price."
+          "q": "How much is 1 Telegram Star in GRAM?",
+          "a": "At the withdrawal rate of about $0.013 per Star, one Star is worth $0.013 divided by the current GRAM price. The calculator above does this with the live price."
         },
         {
           "q": "Why is the purchase price higher than the withdrawal rate?",
           "a": "Users buy Stars through app stores and Telegram, which take a commission. Creators receive the lower withdrawal rate when they cash out."
         },
         {
-          "q": "Can regular users convert Stars to TON?",
+          "q": "Can regular users convert Stars to GRAM?",
           "a": "Withdrawals are available for Stars earned by bots and channels. Stars a user bought for themselves are meant to be spent inside Telegram."
         },
         {
@@ -567,5 +567,16 @@
         }
       ]
     }
+  },
+  "donate": {
+    "title": "Support the author",
+    "description": "TONify is free and has no ads. The amount travels in the link, so your wallet opens straight on the confirmation screen.",
+    "amountGroup": "Donation amount",
+    "openInWallet": "Open in a desktop wallet",
+    "scanHint": "Scan with your phone",
+    "qrAlt": "QR code for sending {ton} TON",
+    "addressLabel": "Author's wallet",
+    "downloaded": "File downloaded",
+    "footerLink": "Donate in GRAM"
   }
 }

@@ -99,7 +99,7 @@
       "no": "否",
       "use": {
         "eq": "智能合约与区块浏览器——所有在投递失败时应退回资金的场景。",
-        "uq": "钱包与交易所充值地址。单纯接收 TON 时最稳妥的默认选择。",
+        "uq": "钱包与交易所充值地址。单纯接收 GRAM 时最稳妥的默认选择。",
         "kq": "测试网可退回地址，用于合约开发与测试。",
         "zq": "测试网不可退回地址，用于测试钱包。",
         "ef": "主链可退回地址——验证者与系统合约。",
@@ -296,7 +296,7 @@
         },
         {
           "wallet": "Telegram 钱包（@wallet）",
-          "steps": "在 Telegram 中打开 @wallet，选择“充值”，再选 Toncoin。Telegram 会显示 TON 网络的地址和二维码。"
+          "steps": "在 Telegram 中打开 @wallet，选择“充值”，再选 Gram。Telegram 会显示 TON 网络的地址和二维码。"
         },
         {
           "wallet": "Trust Wallet",
@@ -423,19 +423,19 @@
       "checker": "TON 钱包检查",
       "guide": "TON 地址格式",
       "testnet": "TON 测试网水龙头",
-      "stars": "Telegram Stars 转 TON"
+      "stars": "Telegram Stars 转 GRAM"
     }
   },
   "testnet": {
     "meta": {
       "title": "TON 测试网水龙头与测试网地址转换 | TONify",
-      "description": "如何从官方水龙头免费领取测试网 TON，以及在主网（EQ/UQ）和测试网（kQ/0Q）格式之间转换任意 TON 地址。免费，在浏览器中运行。",
+      "description": "如何从官方水龙头免费领取测试网 GRAM，以及在主网（EQ/UQ）和测试网（kQ/0Q）格式之间转换任意 TON 地址。免费，在浏览器中运行。",
       "keywords": "ton 测试网水龙头,ton testnet faucet,ton 测试网,领取测试网 ton,ton 水龙头,testgiver ton bot,ton 测试网地址,kQ 地址,0Q 地址,ton 地址转测试网"
     },
     "breadcrumbHome": "TON 地址转换器",
     "breadcrumbCurrent": "TON 测试网水龙头",
     "title": "TON 测试网水龙头与测试网地址转换",
-    "description": "测试网 TON 没有价值，它的用途是让你在不冒真实资金风险的情况下测试钱包、智能合约和 dApp。下面介绍如何从官方水龙头免费领取测试币，并提供一个在主网与测试网地址之间互相转换的工具。",
+    "description": "测试网 GRAM 没有价值，它的用途是让你在不冒真实资金风险的情况下测试钱包、智能合约和 dApp。下面介绍如何从官方水龙头免费领取测试币，并提供一个在主网与测试网地址之间互相转换的工具。",
     "checkerCta": "检查 TON 地址",
     "guideCta": "TON 地址格式指南",
     "converter": {
@@ -452,7 +452,7 @@
       "allForms": "所有地址格式"
     },
     "faucet": {
-      "title": "如何领取测试网 TON",
+      "title": "如何领取测试网 GRAM",
       "body": "TON 基金会运营着一个免费发放测试币的 Telegram 机器人，这也是 TON 官方文档中链接的水龙头。",
       "steps": [
         "将钱包切换到测试网并复制测试网地址，通常以 0Q 或 kQ 开头。如果只有主网地址，可以在上方转换。",
@@ -468,14 +468,14 @@
       "steps": [
         "Tonkeeper 和大多数开发者钱包在设置或开发者菜单中提供测试网开关，开启后应用会显示你的 kQ/0Q 地址。",
         "在代码中，将 SDK（例如 @ton/ton）指向测试网节点，如 testnet.toncenter.com，并使用相同的助记词。",
-        "不要把主网 TON 发送到测试网格式的地址，这正是交易所和钱包在主网拒绝 kQ/0Q 地址的原因。"
+        "不要把主网 GRAM 发送到测试网格式的地址，这正是交易所和钱包在主网拒绝 kQ/0Q 地址的原因。"
       ]
     },
     "faq": {
       "title": "TON 测试网常见问题",
       "items": [
         {
-          "q": "测试网 TON 值钱吗？",
+          "q": "测试网 GRAM 值钱吗？",
           "a": "不值钱。测试币无法出售，也不能跨到主网。它们免费发放，方便开发者在不花真钱的情况下测试。"
         },
         {
@@ -503,14 +503,14 @@
   },
   "stars": {
     "meta": {
-      "title": "Telegram Stars 转 TON 计算器 — Stars 兑 TON 与美元 | TONify",
-      "description": "按实时 TON 价格将 Telegram Stars 换算为 TON 和美元。默认使用 Fragment 提现汇率，一键切换购买价。免费，无需注册。",
+      "title": "Telegram Stars 转 GRAM 计算器 — Stars 兑 GRAM 与美元 | TONify",
+      "description": "按实时 GRAM 价格将 Telegram Stars 换算为 GRAM 和美元。默认使用 Fragment 提现汇率，一键切换购买价。免费，无需注册。",
       "keywords": "telegram stars 转 ton,telegram 星星 换 ton,telegram stars 价格,telegram stars 计算器,一颗 telegram star 多少钱,telegram stars 提现,fragment 提现 stars,stars to ton"
     },
     "breadcrumbHome": "TON 地址转换器",
-    "breadcrumbCurrent": "Telegram Stars 转 TON",
-    "title": "Telegram Stars 转 TON 计算器",
-    "description": "计算你的 Telegram Stars 值多少 TON 和美元。TON 价格实时加载，Star 汇率可编辑，可同时估算提现和购买。",
+    "breadcrumbCurrent": "Telegram Stars 转 GRAM",
+    "title": "Telegram Stars 转 GRAM 计算器",
+    "description": "计算你的 Telegram Stars 值多少 TON 和美元。GRAM 价格实时加载，Star 汇率可编辑，可同时估算提现和购买。",
     "starsLabel": "Stars 数量",
     "starUsdLabel": "每颗 Star 的美元价格",
     "tonUsdLabel": "TON 美元价格（手动覆盖）",
@@ -523,10 +523,10 @@
       "custom": "自定义"
     },
     "price": {
-      "loading": "正在加载实时 TON 价格…",
+      "loading": "正在加载实时 GRAM 价格…",
       "live": "实时价格：${price}（CoinGecko）",
       "failed": "无法加载实时价格，请手动输入。",
-      "title": "TON 价格",
+      "title": "GRAM 价格",
       "edit": "修改",
       "useLive": "使用实时价格"
     },
@@ -538,7 +538,7 @@
     "disclaimer": "仅为估算。Star 汇率由 Telegram 设定并可能调整；未计入 Fragment 和网络手续费。不构成投资建议。",
     "checkerCta": "提现前检查你的 TON 钱包地址",
     "howTo": {
-      "title": "如何将 Telegram Stars 换成 TON",
+      "title": "如何将 Telegram Stars 换成 GRAM",
       "steps": [
         "机器人或频道赚取的 Stars 在 Telegram 的锁定期结束后即可提现。",
         "打开机器人或频道的变现设置，选择通过 Fragment 提现 Stars。",
@@ -551,14 +551,14 @@
       "items": [
         {
           "q": "1 颗 Telegram Star 等于多少 TON？",
-          "a": "按约 0.013 美元/颗的提现汇率，一颗 Star 的价值为 0.013 美元除以当前 TON 价格。上面的计算器会用实时价格完成换算。"
+          "a": "按约 0.013 美元/颗的提现汇率，一颗 Star 的价值为 0.013 美元除以当前 GRAM 价格。上面的计算器会用实时价格完成换算。"
         },
         {
           "q": "为什么购买价高于提现汇率？",
           "a": "用户通过应用商店和 Telegram 购买 Stars，平台会抽取佣金；创作者提现时拿到的是较低的汇率。"
         },
         {
-          "q": "普通用户可以把 Stars 换成 TON 吗？",
+          "q": "普通用户可以把 Stars 换成 GRAM 吗？",
           "a": "提现仅适用于机器人和频道赚取的 Stars。用户自己购买的 Stars 用于在 Telegram 内消费。"
         },
         {
@@ -567,5 +567,16 @@
         }
       ]
     }
+  },
+  "donate": {
+    "title": "支持作者",
+    "description": "TONify 免费且无广告。金额包含在链接中，钱包会直接打开确认页面。",
+    "amountGroup": "捐赠金额",
+    "openInWallet": "在桌面钱包中打开",
+    "scanHint": "用手机扫描",
+    "qrAlt": "发送 {ton} TON 的二维码",
+    "addressLabel": "作者钱包",
+    "downloaded": "文件已下载",
+    "footerLink": "用 TON 支持"
   }
 }

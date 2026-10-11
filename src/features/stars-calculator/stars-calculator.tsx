@@ -134,7 +134,7 @@ export const StarsCalculator = ({ locale, pageUrl, converterUrl }: Props) => {
   if (tonText !== null) {
     tonCell = (
       <>
-        {tonText} TON
+        {tonText} GRAM
         <CopyButton value={tonText.replace(/,/g, "")} />
       </>
     );
@@ -210,7 +210,7 @@ export const StarsCalculator = ({ locale, pageUrl, converterUrl }: Props) => {
               </dl>
               {tonPerStar !== null && starUsd !== null && (
                 <p className="text-sm text-default-500 font-mono">
-                  1 ⭐ = {formatSmall(tonPerStar)} TON = ${formatSmall(starUsd)}
+                  1 ⭐ = {formatSmall(tonPerStar)} GRAM = ${formatSmall(starUsd)}
                 </p>
               )}
             </>

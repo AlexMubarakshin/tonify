@@ -5,7 +5,7 @@ const TONAPI_ACCOUNTS = "https://tonapi.io/v2/accounts/";
 export type OnChainAccount = {
   /** `active`, `uninit`, `frozen`, or whatever else the API reports. */
   status: string;
-  /** Balance in TON, already formatted for display. */
+  /** Balance in GRAM, already formatted for display. */
   balance: string;
   isWallet: boolean;
   isScam: boolean;

@@ -17,9 +17,11 @@ const DownloadIcon = () => (
 type Props = {
   rows: AddressResultTableData[];
   showTestnet: boolean;
+  /** Fired after a file actually leaves, so the page can react to the success. */
+  onDownload?: () => void;
 };
 
-export const AddressConvertorDownload = ({ rows, showTestnet }: Props) => {
+export const AddressConvertorDownload = ({ rows, showTestnet, onDownload }: Props) => {
   const t = useTranslations();
 
   const handleAction = useCallback(
@@ -29,9 +31,13 @@ export const AddressConvertorDownload = ({ rows, showTestnet }: Props) => {
         downloadTextFile("tonify-addresses.csv", rowsToCsv(rows, showTestnet), "text/csv;charset=utf-8");
       } else if (key === "txt") {
         downloadTextFile("tonify-addresses.txt", rowsToTxt(rows, showTestnet), "text/plain;charset=utf-8");
+      } else {
+        return;
       }
+
+      onDownload?.();
     },
-    [rows, showTestnet]
+    [rows, showTestnet, onDownload]
   );
 
   return (

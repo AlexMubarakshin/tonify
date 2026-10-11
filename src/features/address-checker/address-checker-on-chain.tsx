@@ -129,7 +129,7 @@ export const AddressCheckerOnChain = ({ address, disabled }: Props) => {
               <dt className="text-xs uppercase tracking-wide text-default-400">
                 {t("onchain.balance")}
               </dt>
-              <dd className="font-medium font-mono">{state.account.balance} TON</dd>
+              <dd className="font-medium font-mono">{state.account.balance} GRAM</dd>
             </div>
 
             {state.account.interfaces.length > 0 && (

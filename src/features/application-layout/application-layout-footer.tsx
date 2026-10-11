@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import type { LocaleKey } from "@/i18n/constants";
 import { getAssetPath, getLocaleHref } from "@/shared/utils/path";
+import { DEFAULT_DONATE_TIER, donateHref } from "@/features/donate/constants";
 
 /** Every tool page, in the order they are listed. Keys map to `footer.links`. */
 const TOOL_LINKS = [
@@ -29,6 +30,7 @@ type Props = {
  */
 export const ApplicationLayoutFooter = ({ locale }: Props) => {
   const t = useTranslations("footer");
+  const tDonate = useTranslations("donate");
   const pathname = usePathname().replace(/\/$/, "") || "/";
 
   return (
@@ -79,9 +81,19 @@ export const ApplicationLayoutFooter = ({ locale }: Props) => {
               Alex Mubarakshin
             </a>
           </span>
-          <a href={REPO_URL} target="_blank" rel="noreferrer" className="hover:text-primary">
-            {t("openSource")}
-          </a>
+          <span className="flex flex-wrap items-center gap-x-5 gap-y-1">
+            <a
+              href={donateHref(DEFAULT_DONATE_TIER)}
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-primary hover:underline"
+            >
+              {tDonate("footerLink")}
+            </a>
+            <a href={REPO_URL} target="_blank" rel="noreferrer" className="hover:text-primary">
+              {t("openSource")}
+            </a>
+          </span>
         </div>
       </div>
     </footer>
